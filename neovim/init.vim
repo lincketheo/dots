@@ -74,10 +74,6 @@ end
 -- global
 vim.api.nvim_set_keymap("n", "<C-h>", ":NvimTreeToggle<cr>", {silent = true, noremap = true})
 
--- on_attach
-vim.keymap.set("n", "h", api.tree.close)
-vim.keymap.set("n", "H", api.tree.collapse_all)
-
 -- disable netrw at the very start of your init.lua
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
