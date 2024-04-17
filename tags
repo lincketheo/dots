@@ -4,3 +4,943 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
+"require'kanagawa'.compiled 	neovim/plugged/kanagawa.nvim/lua/kanagawa/utils.lua	/^        "require'kanagawa'.compiled = string.dump(function()",$/;"	f
+) move	neovim/plugged/nvim-treehopper/lua/tsht.lua	/^  coroutine.wrap(function() move(opts) end)()$/;"	f
+Api.commands.get 	neovim/plugged/nvim-tree.lua/lua/nvim-tree/api.lua	/^Api.commands.get = wrap(function()$/;"	f
+Api.tree.change_root 	neovim/plugged/nvim-tree.lua/lua/nvim-tree/api.lua	/^Api.tree.change_root = wrap(function(...)$/;"	f
+Api.tree.change_root_to_node 	neovim/plugged/nvim-tree.lua/lua/nvim-tree/api.lua	/^Api.tree.change_root_to_node = wrap_node(function(node)$/;"	f
+BUILD_INVERTED_INDEX	neovim/plugged/vim-gutentags/plat/win32/update_scopedb.cmd	/^    set BUILD_INVERTED_INDEX=1$/;"	v
+BUILD_INVERTED_INDEX	neovim/plugged/vim-gutentags/plat/win32/update_scopedb.cmd	/^set BUILD_INVERTED_INDEX=0$/;"	v
+Builder.setup	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/builder.lua	/^function Builder.setup(opts)$/;"	f
+Builder:add_highlights	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/builder.lua	/^function Builder:add_highlights(node)$/;"	f
+Builder:build	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/builder.lua	/^function Builder:build()$/;"	f
+Builder:build_file	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/builder.lua	/^function Builder:build_file(node)$/;"	f
+Builder:build_folder	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/builder.lua	/^function Builder:build_folder(node)$/;"	f
+Builder:build_header	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/builder.lua	/^function Builder:build_header()$/;"	f
+Builder:build_line	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/builder.lua	/^function Builder:build_line(node, idx, num_children)$/;"	f
+Builder:build_lines	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/builder.lua	/^function Builder:build_lines(node)$/;"	f
+Builder:build_signs	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/builder.lua	/^function Builder:build_signs(node)$/;"	f
+Builder:build_symlink	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/builder.lua	/^function Builder:build_symlink(node)$/;"	f
+Builder:create_combined_group	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/builder.lua	/^function Builder:create_combined_group(groups)$/;"	f
+Builder:format_line	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/builder.lua	/^function Builder:format_line(indent_markers, arrows, icon, name, node)$/;"	f
+Builder:format_root_name	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/builder.lua	/^function Builder:format_root_name(root_label)$/;"	f
+Builder:get_folder_name	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/builder.lua	/^function Builder:get_folder_name(node)$/;"	f
+Builder:get_nodes_number	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/builder.lua	/^function Builder:get_nodes_number(nodes)$/;"	f
+Builder:insert_highlight	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/builder.lua	/^function Builder:insert_highlight(groups, start, end_)$/;"	f
+Builder:new	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/builder.lua	/^function Builder:new()$/;"	f
+Builder:unwrap_highlighted_strings	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/builder.lua	/^function Builder:unwrap_highlighted_strings(highlighted_strings)$/;"	f
+C.case_sensitive	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/sorters.lua	/^function C.case_sensitive(a, b)$/;"	f
+C.extension	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/sorters.lua	/^function C.extension(a, b)$/;"	f
+C.filetype	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/sorters.lua	/^function C.filetype(a, b)$/;"	f
+C.modification_time	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/sorters.lua	/^function C.modification_time(a, b)$/;"	f
+C.name	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/sorters.lua	/^function C.name(a, b)$/;"	f
+C.suffix	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/sorters.lua	/^function C.suffix(a, b)$/;"	f
+CSCOPE_ARGS	neovim/plugged/vim-gutentags/plat/win32/update_scopedb.cmd	/^    set CSCOPE_ARGS=%CSCOPE_ARGS% -q$/;"	v
+CSCOPE_ARGS	neovim/plugged/vim-gutentags/plat/win32/update_scopedb.cmd	/^set CSCOPE_ARGS=$/;"	v
+CSCOPE_ARGS	neovim/plugged/vim-gutentags/plat/win32/update_scopedb.cmd	/^set CSCOPE_ARGS=%CSCOPE_ARGS% -i %DB_FILE%.files$/;"	v
+CSCOPE_EXE	neovim/plugged/vim-gutentags/plat/win32/update_scopedb.cmd	/^    set CSCOPE_EXE=%~2$/;"	v
+CSCOPE_EXE	neovim/plugged/vim-gutentags/plat/win32/update_scopedb.cmd	/^set CSCOPE_EXE=cscope$/;"	v
+CTAGS_ARGS	neovim/plugged/vim-gutentags/plat/win32/update_tags.cmd	/^        set CTAGS_ARGS=%CTAGS_ARGS% "%PROJECT_ROOT%"$/;"	v
+CTAGS_ARGS	neovim/plugged/vim-gutentags/plat/win32/update_tags.cmd	/^        set CTAGS_ARGS=%CTAGS_ARGS% --append "%UPDATED_SOURCE%"$/;"	v
+CTAGS_ARGS	neovim/plugged/vim-gutentags/plat/win32/update_tags.cmd	/^        set CTAGS_ARGS=%CTAGS_ARGS% -L %TAGS_FILE%.files$/;"	v
+CTAGS_ARGS	neovim/plugged/vim-gutentags/plat/win32/update_tags.cmd	/^    set CTAGS_ARGS=%CTAGS_ARGS% %~2$/;"	v
+CTAGS_ARGS	neovim/plugged/vim-gutentags/plat/win32/update_tags.cmd	/^    set CTAGS_ARGS=%CTAGS_ARGS% --exclude=%2$/;"	v
+CTAGS_ARGS	neovim/plugged/vim-gutentags/plat/win32/update_tags.cmd	/^    set CTAGS_ARGS=%CTAGS_ARGS% --options=%2$/;"	v
+CTAGS_ARGS	neovim/plugged/vim-gutentags/plat/win32/update_tags.cmd	/^set CTAGS_ARGS=$/;"	v
+CTAGS_EXE	neovim/plugged/vim-gutentags/plat/win32/update_tags.cmd	/^    set CTAGS_EXE=%~2$/;"	v
+CTAGS_EXE	neovim/plugged/vim-gutentags/plat/win32/update_tags.cmd	/^set CTAGS_EXE=ctags$/;"	v
+CleanUp	neovim/plugged/vim-gutentags/plat/unix/update_scopedb.sh	/^CleanUp() {$/;"	f
+Color.new	neovim/plugged/kanagawa.nvim/lua/kanagawa/lib/color.lua	/^function Color.new(hex)$/;"	f
+Color:blend	neovim/plugged/kanagawa.nvim/lua/kanagawa/lib/color.lua	/^function Color:blend(b, r)$/;"	f
+Color:brighten	neovim/plugged/kanagawa.nvim/lua/kanagawa/lib/color.lua	/^function Color:brighten(r, bg)$/;"	f
+Color:saturate	neovim/plugged/kanagawa.nvim/lua/kanagawa/lib/color.lua	/^function Color:saturate(r)$/;"	f
+Color:to_hex	neovim/plugged/kanagawa.nvim/lua/kanagawa/lib/color.lua	/^function Color:to_hex()$/;"	f
+Color:to_rgb	neovim/plugged/kanagawa.nvim/lua/kanagawa/lib/color.lua	/^function Color:to_rgb()$/;"	f
+DB_FILE	neovim/plugged/vim-gutentags/plat/win32/update_scopedb.cmd	/^    set DB_FILE=%~2$/;"	v
+DB_FILE	neovim/plugged/vim-gutentags/plat/win32/update_scopedb.cmd	/^set DB_FILE=cscope.out$/;"	v
+Decorator:calculate_highlight	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/decorator/init.lua	/^function Decorator:calculate_highlight(_)$/;"	f
+Decorator:calculate_icons	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/decorator/init.lua	/^function Decorator:calculate_icons(_)$/;"	f
+Decorator:define_sign	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/decorator/init.lua	/^function Decorator:define_sign(icon)$/;"	f
+Decorator:groups_icon_name	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/decorator/init.lua	/^function Decorator:groups_icon_name(node)$/;"	f
+Decorator:icons_after	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/decorator/init.lua	/^function Decorator:icons_after(node)$/;"	f
+Decorator:icons_before	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/decorator/init.lua	/^function Decorator:icons_before(node)$/;"	f
+Decorator:new	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/decorator/init.lua	/^function Decorator:new(o)$/;"	f
+Decorator:sign_name	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/decorator/init.lua	/^function Decorator:sign_name(node)$/;"	f
+DecoratorBookmarks:calculate_highlight	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/decorator/bookmarks.lua	/^function DecoratorBookmarks:calculate_highlight(node)$/;"	f
+DecoratorBookmarks:calculate_icons	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/decorator/bookmarks.lua	/^function DecoratorBookmarks:calculate_icons(node)$/;"	f
+DecoratorBookmarks:new	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/decorator/bookmarks.lua	/^function DecoratorBookmarks:new(opts)$/;"	f
+DecoratorCopied:calculate_highlight	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/decorator/copied.lua	/^function DecoratorCopied:calculate_highlight(node)$/;"	f
+DecoratorCopied:new	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/decorator/copied.lua	/^function DecoratorCopied:new(opts)$/;"	f
+DecoratorCut:calculate_highlight	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/decorator/cut.lua	/^function DecoratorCut:calculate_highlight(node)$/;"	f
+DecoratorCut:new	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/decorator/cut.lua	/^function DecoratorCut:new(opts)$/;"	f
+DecoratorDiagnostics:calculate_highlight	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/decorator/diagnostics.lua	/^function DecoratorDiagnostics:calculate_highlight(node)$/;"	f
+DecoratorDiagnostics:calculate_icons	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/decorator/diagnostics.lua	/^function DecoratorDiagnostics:calculate_icons(node)$/;"	f
+DecoratorDiagnostics:new	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/decorator/diagnostics.lua	/^function DecoratorDiagnostics:new(opts)$/;"	f
+DecoratorGit:build_hl_table	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/decorator/git.lua	/^function DecoratorGit:build_hl_table()$/;"	f
+DecoratorGit:build_icons_by_status	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/decorator/git.lua	/^function DecoratorGit:build_icons_by_status(glyphs)$/;"	f
+DecoratorGit:build_icons_by_xy	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/decorator/git.lua	/^function DecoratorGit:build_icons_by_xy(icons)$/;"	f
+DecoratorGit:calculate_highlight	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/decorator/git.lua	/^function DecoratorGit:calculate_highlight(node)$/;"	f
+DecoratorGit:calculate_icons	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/decorator/git.lua	/^function DecoratorGit:calculate_icons(node)$/;"	f
+DecoratorGit:new	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/decorator/git.lua	/^function DecoratorGit:new(opts)$/;"	f
+DecoratorGit:sign_name	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/decorator/git.lua	/^function DecoratorGit:sign_name(node)$/;"	f
+DecoratorModified:calculate_highlight	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/decorator/modified.lua	/^function DecoratorModified:calculate_highlight(node)$/;"	f
+DecoratorModified:calculate_icons	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/decorator/modified.lua	/^function DecoratorModified:calculate_icons(node)$/;"	f
+DecoratorModified:new	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/decorator/modified.lua	/^function DecoratorModified:new(opts)$/;"	f
+DecoratorOpened:calculate_highlight	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/decorator/opened.lua	/^function DecoratorOpened:calculate_highlight(node)$/;"	f
+DecoratorOpened:new	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/decorator/opened.lua	/^function DecoratorOpened:new(opts)$/;"	f
+DoneParseArgs	neovim/plugged/vim-gutentags/plat/win32/update_gtags.cmd	/^:DoneParseArgs$/;"	l
+DoneParseArgs	neovim/plugged/vim-gutentags/plat/win32/update_scopedb.cmd	/^:DoneParseArgs$/;"	l
+DoneParseArgs	neovim/plugged/vim-gutentags/plat/win32/update_tags.cmd	/^:DoneParseArgs$/;"	l
+Event:add	neovim/plugged/nvim-tree.lua/lua/nvim-tree/watcher.lua	/^function Event:add(listener)$/;"	f
+Event:destroy	neovim/plugged/nvim-tree.lua/lua/nvim-tree/watcher.lua	/^function Event:destroy(message)$/;"	f
+Event:new	neovim/plugged/nvim-tree.lua/lua/nvim-tree/watcher.lua	/^function Event:new(path)$/;"	f
+Event:remove	neovim/plugged/nvim-tree.lua/lua/nvim-tree/watcher.lua	/^function Event:remove(listener)$/;"	f
+Event:start	neovim/plugged/nvim-tree.lua/lua/nvim-tree/watcher.lua	/^function Event:start()$/;"	f
+Explorer.new	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/init.lua	/^function Explorer.new(cwd)$/;"	f
+Explorer:_load	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/init.lua	/^function Explorer:_load(node)$/;"	f
+Explorer:destroy	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/init.lua	/^function Explorer:destroy()$/;"	f
+Explorer:expand	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/init.lua	/^function Explorer:expand(node)$/;"	f
+FILESIZE	neovim/plugged/vim-gutentags/plat/win32/update_scopedb.cmd	/^for \/F %%F in ("%DB_FILE%.files") do set FILESIZE=%%~zF$/;"	v
+FILESIZE	neovim/plugged/vim-gutentags/plat/win32/update_scopedb.cmd	/^set FILESIZE=0$/;"	v
+FILE_LIST_CMD	neovim/plugged/vim-gutentags/plat/win32/update_gtags.cmd	/^	set FILE_LIST_CMD=%~2$/;"	v
+FILE_LIST_CMD	neovim/plugged/vim-gutentags/plat/win32/update_scopedb.cmd	/^    set FILE_LIST_CMD=%~2$/;"	v
+FILE_LIST_CMD	neovim/plugged/vim-gutentags/plat/win32/update_scopedb.cmd	/^set FILE_LIST_CMD=$/;"	v
+FILE_LIST_CMD	neovim/plugged/vim-gutentags/plat/win32/update_tags.cmd	/^    set FILE_LIST_CMD=%~2$/;"	v
+FILE_LIST_CMD	neovim/plugged/vim-gutentags/plat/win32/update_tags.cmd	/^set FILE_LIST_CMD=$/;"	v
+FILE_LIST_CMD_IS_ABSOLUTE	neovim/plugged/vim-gutentags/plat/win32/update_tags.cmd	/^    set FILE_LIST_CMD_IS_ABSOLUTE=1$/;"	v
+FILE_LIST_CMD_IS_ABSOLUTE	neovim/plugged/vim-gutentags/plat/win32/update_tags.cmd	/^set FILE_LIST_CMD_IS_ABSOLUTE=0$/;"	v
+Function 	neovim/plugged/kanagawa.nvim/lua/kanagawa/highlights/syntax.lua	/^        Function = vim.tbl_extend("force", { fg = theme.syn.fun }, config.functionStyle),$/;"	f
+GTAGS_EXE	neovim/plugged/vim-gutentags/plat/win32/update_gtags.cmd	/^	set GTAGS_EXE=%~2$/;"	v
+GutentagsToggleEnabled	neovim/plugged/vim-gutentags/plugin/gutentags.vim	/^    command! GutentagsToggleEnabled :let g:gutentags_enabled=!g:gutentags_enabled$/;"	c
+GutentagsToggleFake	neovim/plugged/vim-gutentags/plugin/gutentags.vim	/^    command! GutentagsToggleFake    :call gutentags#fake()$/;"	c
+GutentagsToggleTrace	neovim/plugged/vim-gutentags/plugin/gutentags.vim	/^    command! GutentagsToggleTrace   :call gutentags#toggletrace()$/;"	c
+HighlightDisplay:new	neovim/plugged/nvim-tree.lua/lua/nvim-tree/appearance/diagnostics.lua	/^function HighlightDisplay:new(group)$/;"	f
+HighlightDisplay:render	neovim/plugged/nvim-tree.lua/lua/nvim-tree/appearance/diagnostics.lua	/^function HighlightDisplay:render(bufnr, fmt, l)$/;"	f
+INDEX_WHOLE_PROJECT	neovim/plugged/vim-gutentags/plat/win32/update_tags.cmd	/^        set INDEX_WHOLE_PROJECT=0$/;"	v
+INDEX_WHOLE_PROJECT	neovim/plugged/vim-gutentags/plat/win32/update_tags.cmd	/^set INDEX_WHOLE_PROJECT=1$/;"	v
+IconDisplay:new	neovim/plugged/nvim-web-devicons/lua/nvim-web-devicons/hi-test.lua	/^function IconDisplay:new(o)$/;"	f
+IconDisplay:render	neovim/plugged/nvim-web-devicons/lua/nvim-web-devicons/hi-test.lua	/^function IconDisplay:render(bufnr, max_tag_len, max_name_len, l)$/;"	f
+KMeans	neovim/plugged/kanagawa.nvim/palette.py	/^from sklearn.cluster import KMeans$/;"	i
+LOG_FILE	neovim/plugged/vim-gutentags/plat/win32/update_scopedb.cmd	/^    set LOG_FILE=%~2$/;"	v
+LOG_FILE	neovim/plugged/vim-gutentags/plat/win32/update_scopedb.cmd	/^if [%LOG_FILE%]==[] set LOG_FILE=CON$/;"	v
+LOG_FILE	neovim/plugged/vim-gutentags/plat/win32/update_scopedb.cmd	/^set LOG_FILE=$/;"	v
+LOG_FILE	neovim/plugged/vim-gutentags/plat/win32/update_tags.cmd	/^    set LOG_FILE=%~2$/;"	v
+LOG_FILE	neovim/plugged/vim-gutentags/plat/win32/update_tags.cmd	/^if [%LOG_FILE%]==[] set LOG_FILE=CON$/;"	v
+LOG_FILE	neovim/plugged/vim-gutentags/plat/win32/update_tags.cmd	/^set LOG_FILE=$/;"	v
+LoopParseArgs	neovim/plugged/vim-gutentags/plat/win32/update_scopedb.cmd	/^:LoopParseArgs$/;"	l
+LoopParseArgs	neovim/plugged/vim-gutentags/plat/win32/update_tags.cmd	/^:LoopParseArgs$/;"	l
+M._dispatch_file_created	neovim/plugged/nvim-tree.lua/lua/nvim-tree/events.lua	/^function M._dispatch_file_created(fname)$/;"	f
+M._dispatch_file_removed	neovim/plugged/nvim-tree.lua/lua/nvim-tree/events.lua	/^function M._dispatch_file_removed(fname)$/;"	f
+M._dispatch_folder_created	neovim/plugged/nvim-tree.lua/lua/nvim-tree/events.lua	/^function M._dispatch_folder_created(folder_name)$/;"	f
+M._dispatch_folder_removed	neovim/plugged/nvim-tree.lua/lua/nvim-tree/events.lua	/^function M._dispatch_folder_removed(folder_name)$/;"	f
+M._dispatch_node_renamed	neovim/plugged/nvim-tree.lua/lua/nvim-tree/events.lua	/^function M._dispatch_node_renamed(old_name, new_name)$/;"	f
+M._dispatch_on_tree_close	neovim/plugged/nvim-tree.lua/lua/nvim-tree/events.lua	/^function M._dispatch_on_tree_close()$/;"	f
+M._dispatch_on_tree_open	neovim/plugged/nvim-tree.lua/lua/nvim-tree/events.lua	/^function M._dispatch_on_tree_open()$/;"	f
+M._dispatch_on_tree_rendered	neovim/plugged/nvim-tree.lua/lua/nvim-tree/events.lua	/^function M._dispatch_on_tree_rendered(bufnr, winnr)$/;"	f
+M._dispatch_on_tree_resize	neovim/plugged/nvim-tree.lua/lua/nvim-tree/events.lua	/^function M._dispatch_on_tree_resize(size)$/;"	f
+M._dispatch_ready	neovim/plugged/nvim-tree.lua/lua/nvim-tree/events.lua	/^function M._dispatch_ready()$/;"	f
+M._dispatch_tree_attached_post	neovim/plugged/nvim-tree.lua/lua/nvim-tree/events.lua	/^function M._dispatch_tree_attached_post(buf)$/;"	f
+M._dispatch_will_create_file	neovim/plugged/nvim-tree.lua/lua/nvim-tree/events.lua	/^function M._dispatch_will_create_file(fname)$/;"	f
+M._dispatch_will_remove_file	neovim/plugged/nvim-tree.lua/lua/nvim-tree/events.lua	/^function M._dispatch_will_remove_file(fname)$/;"	f
+M._dispatch_will_rename_node	neovim/plugged/nvim-tree.lua/lua/nvim-tree/events.lua	/^function M._dispatch_will_rename_node(old_name, new_name)$/;"	f
+M._prevent_buffer_override	neovim/plugged/nvim-tree.lua/lua/nvim-tree/view.lua	/^function M._prevent_buffer_override()$/;"	f
+M.abandon_all_windows	neovim/plugged/nvim-tree.lua/lua/nvim-tree/view.lua	/^function M.abandon_all_windows()$/;"	f
+M.abandon_current_window	neovim/plugged/nvim-tree.lua/lua/nvim-tree/view.lua	/^function M.abandon_current_window()$/;"	f
+M.apply_filter	neovim/plugged/nvim-tree.lua/lua/nvim-tree/live-filter.lua	/^function M.apply_filter(node_)$/;"	f
+M.array_remove	neovim/plugged/nvim-tree.lua/lua/nvim-tree/utils.lua	/^function M.array_remove(array, item)$/;"	f
+M.array_remove_nils	neovim/plugged/nvim-tree.lua/lua/nvim-tree/utils.lua	/^function M.array_remove_nils(array)$/;"	f
+M.array_shallow_clone	neovim/plugged/nvim-tree.lua/lua/nvim-tree/utils.lua	/^function M.array_shallow_clone(array)$/;"	f
+M.bool_record	neovim/plugged/nvim-tree.lua/lua/nvim-tree/utils.lua	/^function M.bool_record(tbl, key)$/;"	f
+M.bulk_delete	neovim/plugged/nvim-tree.lua/lua/nvim-tree/marks/bulk-delete.lua	/^function M.bulk_delete()$/;"	f
+M.bulk_move	neovim/plugged/nvim-tree.lua/lua/nvim-tree/marks/bulk-move.lua	/^function M.bulk_move()$/;"	f
+M.bulk_trash	neovim/plugged/nvim-tree.lua/lua/nvim-tree/marks/bulk-trash.lua	/^function M.bulk_trash()$/;"	f
+M.canonical_path	neovim/plugged/nvim-tree.lua/lua/nvim-tree/utils.lua	/^function M.canonical_path(path)$/;"	f
+M.change_dir	neovim/plugged/nvim-tree.lua/lua/nvim-tree.lua	/^function M.change_dir(name)$/;"	f
+M.change_root	neovim/plugged/nvim-tree.lua/lua/nvim-tree.lua	/^function M.change_root(path, bufnr)$/;"	f
+M.clear_clipboard	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/fs/copy-paste.lua	/^function M.clear_clipboard()$/;"	f
+M.clear_filter	neovim/plugged/nvim-tree.lua/lua/nvim-tree/live-filter.lua	/^function M.clear_filter()$/;"	f
+M.clear_marks	neovim/plugged/nvim-tree.lua/lua/nvim-tree/marks/init.lua	/^function M.clear_marks()$/;"	f
+M.clear_prompt	neovim/plugged/nvim-tree.lua/lua/nvim-tree/utils.lua	/^function M.clear_prompt()$/;"	f
+M.close	neovim/plugged/nvim-tree.lua/lua/nvim-tree/view.lua	/^function M.close()$/;"	f
+M.close_all_tabs	neovim/plugged/nvim-tree.lua/lua/nvim-tree/view.lua	/^function M.close_all_tabs()$/;"	f
+M.close_popup	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/node/file-popup.lua	/^function M.close_popup()$/;"	f
+M.close_this_tab_only	neovim/plugged/nvim-tree.lua/lua/nvim-tree/view.lua	/^function M.close_this_tab_only()$/;"	f
+M.compile	neovim/plugged/kanagawa.nvim/lua/kanagawa/init.lua	/^function M.compile()$/;"	f
+M.compile	neovim/plugged/kanagawa.nvim/lua/kanagawa/utils.lua	/^function M.compile(theme, highlights, termcolors)$/;"	f
+M.copy	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/fs/copy-paste.lua	/^function M.copy(node)$/;"	f
+M.copy_absolute_path	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/fs/copy-paste.lua	/^function M.copy_absolute_path(node)$/;"	f
+M.copy_basename	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/fs/copy-paste.lua	/^function M.copy_basename(node)$/;"	f
+M.copy_filename	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/fs/copy-paste.lua	/^function M.copy_filename(node)$/;"	f
+M.copy_path	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/fs/copy-paste.lua	/^function M.copy_path(node)$/;"	f
+M.create_watcher	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/watch.lua	/^function M.create_watcher(node)$/;"	f
+M.custom	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/tree/modifiers/toggles.lua	/^function M.custom()$/;"	f
+M.custom_function 	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/filters.lua	/^    M.custom_function = custom_filter$/;"	f
+M.cut	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/fs/copy-paste.lua	/^function M.cut(node)$/;"	f
+M.debounce	neovim/plugged/nvim-tree.lua/lua/nvim-tree/utils.lua	/^function M.debounce(context, timeout, callback)$/;"	f
+M.default_on_attach	neovim/plugged/nvim-tree.lua/lua/nvim-tree/keymap.lua	/^function M.default_on_attach(bufnr)$/;"	f
+M.disable_git_integration	neovim/plugged/nvim-tree.lua/lua/nvim-tree/git/init.lua	/^function M.disable_git_integration()$/;"	f
+M.disable_watchers	neovim/plugged/nvim-tree.lua/lua/nvim-tree/watcher.lua	/^function M.disable_watchers(msg)$/;"	f
+M.dotfiles	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/tree/modifiers/toggles.lua	/^function M.dotfiles()$/;"	f
+M.draw	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/init.lua	/^function M.draw()$/;"	f
+M.enable	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/tree/modifiers/toggles.lua	/^function M.enable()$/;"	f
+M.enabled	neovim/plugged/nvim-tree.lua/lua/nvim-tree/log.lua	/^function M.enabled(typ)$/;"	f
+M.escape_special_chars	neovim/plugged/nvim-tree.lua/lua/nvim-tree/utils.lua	/^function M.escape_special_chars(path)$/;"	f
+M.expand_or_collapse	neovim/plugged/nvim-tree.lua/lua/nvim-tree/lib.lua	/^function M.expand_or_collapse(node, toggle_group)$/;"	f
+M.explore	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/explore.lua	/^function M.explore(node, status)$/;"	f
+M.file	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/node-builders.lua	/^function M.file(parent, absolute_path, name, fs_stat)$/;"	f
+M.file_exists	neovim/plugged/nvim-tree.lua/lua/nvim-tree/utils.lua	/^function M.file_exists(path)$/;"	f
+M.file_status_to_dir_status	neovim/plugged/nvim-tree.lua/lua/nvim-tree/git/utils.lua	/^function M.file_status_to_dir_status(status, cwd)$/;"	f
+M.find_node	neovim/plugged/nvim-tree.lua/lua/nvim-tree/utils.lua	/^function M.find_node(nodes, fn)$/;"	f
+M.find_node_line	neovim/plugged/nvim-tree.lua/lua/nvim-tree/utils.lua	/^function M.find_node_line(node)$/;"	f
+M.fn	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/finders/find-file.lua	/^function M.fn(path)$/;"	f
+M.fn	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/finders/search-node.lua	/^function M.fn()$/;"	f
+M.fn	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/fs/create-file.lua	/^function M.fn(node)$/;"	f
+M.fn	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/fs/remove-file.lua	/^function M.fn(node)$/;"	f
+M.fn	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/fs/rename-file.lua	/^function M.fn(default_modifier)$/;"	f
+M.fn	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/fs/trash.lua	/^function M.fn(node)$/;"	f
+M.fn	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/moves/item.lua	/^function M.fn(opts)$/;"	f
+M.fn	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/moves/parent.lua	/^function M.fn(should_close)$/;"	f
+M.fn	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/moves/sibling.lua	/^function M.fn(direction)$/;"	f
+M.fn	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/node/open-file.lua	/^function M.fn(mode, filename)$/;"	f
+M.fn	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/node/system-open.lua	/^function M.fn(node)$/;"	f
+M.fn	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/root/change-dir.lua	/^function M.fn(input_cwd, with_open)$/;"	f
+M.fn	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/root/dir-up.lua	/^function M.fn(node)$/;"	f
+M.fn	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/tree/find-file.lua	/^function M.fn(opts)$/;"	f
+M.fn	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/tree/modifiers/collapse-all.lua	/^function M.fn(keep_buffers)$/;"	f
+M.fn	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/tree/modifiers/expand-all.lua	/^function M.fn(base_node)$/;"	f
+M.fn	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/tree/open.lua	/^function M.fn(opts)$/;"	f
+M.fn	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/tree/toggle.lua	/^function M.fn(opts, no_focus, cwd, bang)$/;"	f
+M.focus	neovim/plugged/nvim-tree.lua/lua/nvim-tree/view.lua	/^function M.focus(winnr, open_if_closed)$/;"	f
+M.focus_file	neovim/plugged/nvim-tree.lua/lua/nvim-tree/utils.lua	/^function M.focus_file(path)$/;"	f
+M.focus_node_or_parent	neovim/plugged/nvim-tree.lua/lua/nvim-tree/utils.lua	/^function M.focus_node_or_parent(node)$/;"	f
+M.folder	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/node-builders.lua	/^function M.folder(parent, absolute_path, name, fs_stat)$/;"	f
+M.force_dirchange 	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/root/change-dir.lua	/^M.force_dirchange = add_profiling_to(function(foldername, should_open_view)$/;"	f
+M.format_bytes	neovim/plugged/nvim-tree.lua/lua/nvim-tree/utils.lua	/^function M.format_bytes(bytes)$/;"	f
+M.get	neovim/plugged/nvim-tree.lua/lua/nvim-tree/commands.lua	/^function M.get()$/;"	f
+M.get_all_nodes_in_group	neovim/plugged/nvim-tree.lua/lua/nvim-tree/lib.lua	/^function M.get_all_nodes_in_group(node)$/;"	f
+M.get_arrows	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/components/padding.lua	/^function M.get_arrows(node)$/;"	f
+M.get_bufnr	neovim/plugged/nvim-tree.lua/lua/nvim-tree/view.lua	/^function M.get_bufnr()$/;"	f
+M.get_config	neovim/plugged/nvim-tree.lua/lua/nvim-tree.lua	/^function M.get_config()$/;"	f
+M.get_cwd	neovim/plugged/nvim-tree.lua/lua/nvim-tree/core.lua	/^function M.get_cwd()$/;"	f
+M.get_default_icon	neovim/plugged/nvim-web-devicons/lua/nvim-web-devicons.lua	/^function M.get_default_icon()$/;"	f
+M.get_diag_status	neovim/plugged/nvim-tree.lua/lua/nvim-tree/diagnostics.lua	/^function M.get_diag_status(node)$/;"	f
+M.get_explorer	neovim/plugged/nvim-tree.lua/lua/nvim-tree/core.lua	/^function M.get_explorer()$/;"	f
+M.get_git_status	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/node.lua	/^function M.get_git_status(node)$/;"	f
+M.get_highlight	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/components/diagnostics.lua	/^function M.get_highlight(node)$/;"	f
+M.get_icon	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/components/diagnostics.lua	/^function M.get_icon(node)$/;"	f
+M.get_icon	neovim/plugged/nvim-web-devicons/lua/nvim-web-devicons.lua	/^function M.get_icon(name, ext, opts)$/;"	f
+M.get_icon_by_filetype	neovim/plugged/nvim-web-devicons/lua/nvim-web-devicons.lua	/^function M.get_icon_by_filetype(ft, opts)$/;"	f
+M.get_icon_color	neovim/plugged/nvim-web-devicons/lua/nvim-web-devicons.lua	/^function M.get_icon_color(name, ext, opts)$/;"	f
+M.get_icon_color_by_filetype	neovim/plugged/nvim-web-devicons/lua/nvim-web-devicons.lua	/^function M.get_icon_color_by_filetype(ft, opts)$/;"	f
+M.get_icon_colors	neovim/plugged/nvim-web-devicons/lua/nvim-web-devicons.lua	/^function M.get_icon_colors(name, ext, opts)$/;"	f
+M.get_icon_colors_by_filetype	neovim/plugged/nvim-web-devicons/lua/nvim-web-devicons.lua	/^function M.get_icon_colors_by_filetype(ft, opts)$/;"	f
+M.get_icon_cterm_color	neovim/plugged/nvim-web-devicons/lua/nvim-web-devicons.lua	/^function M.get_icon_cterm_color(name, ext, opts)$/;"	f
+M.get_icon_cterm_color_by_filetype	neovim/plugged/nvim-web-devicons/lua/nvim-web-devicons.lua	/^function M.get_icon_cterm_color_by_filetype(ft, opts)$/;"	f
+M.get_icon_name_by_filetype	neovim/plugged/nvim-web-devicons/lua/nvim-web-devicons.lua	/^function M.get_icon_name_by_filetype(ft)$/;"	f
+M.get_icons	neovim/plugged/nvim-web-devicons/lua/nvim-web-devicons.lua	/^function M.get_icons()$/;"	f
+M.get_indent_markers	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/components/padding.lua	/^function M.get_indent_markers(depth, idx, nodes_number, node, markers)$/;"	f
+M.get_keymap	neovim/plugged/nvim-tree.lua/lua/nvim-tree/keymap.lua	/^function M.get_keymap()$/;"	f
+M.get_keymap_default	neovim/plugged/nvim-tree.lua/lua/nvim-tree/keymap.lua	/^function M.get_keymap_default()$/;"	f
+M.get_last_group_node	neovim/plugged/nvim-tree.lua/lua/nvim-tree/lib.lua	/^function M.get_last_group_node(node)$/;"	f
+M.get_mark	neovim/plugged/nvim-tree.lua/lua/nvim-tree/marks/init.lua	/^function M.get_mark(node)$/;"	f
+M.get_marks	neovim/plugged/nvim-tree.lua/lua/nvim-tree/marks/init.lua	/^function M.get_marks()$/;"	f
+M.get_node_at_cursor	neovim/plugged/nvim-tree.lua/lua/nvim-tree/lib.lua	/^function M.get_node_at_cursor()$/;"	f
+M.get_node_from_path	neovim/plugged/nvim-tree.lua/lua/nvim-tree/utils.lua	/^function M.get_node_from_path(path)$/;"	f
+M.get_nodes	neovim/plugged/nvim-tree.lua/lua/nvim-tree/lib.lua	/^function M.get_nodes()$/;"	f
+M.get_nodes_by_line	neovim/plugged/nvim-tree.lua/lua/nvim-tree/utils.lua	/^function M.get_nodes_by_line(nodes_all, line_start)$/;"	f
+M.get_nodes_starting_line	neovim/plugged/nvim-tree.lua/lua/nvim-tree/core.lua	/^function M.get_nodes_starting_line()$/;"	f
+M.get_parent_of_group	neovim/plugged/nvim-tree.lua/lua/nvim-tree/utils.lua	/^function M.get_parent_of_group(node)$/;"	f
+M.get_project	neovim/plugged/nvim-tree.lua/lua/nvim-tree/git/init.lua	/^function M.get_project(toplevel)$/;"	f
+M.get_theme_from_bg_opt	neovim/plugged/kanagawa.nvim/lua/kanagawa/utils.lua	/^function M.get_theme_from_bg_opt()$/;"	f
+M.get_toplevel	neovim/plugged/nvim-tree.lua/lua/nvim-tree/git/init.lua	/^function M.get_toplevel(path)$/;"	f
+M.get_toplevel	neovim/plugged/nvim-tree.lua/lua/nvim-tree/git/utils.lua	/^function M.get_toplevel(cwd)$/;"	f
+M.get_win_buf_from_path	neovim/plugged/nvim-tree.lua/lua/nvim-tree/utils.lua	/^function M.get_win_buf_from_path(path)$/;"	f
+M.get_winnr	neovim/plugged/nvim-tree.lua/lua/nvim-tree/view.lua	/^function M.get_winnr(tabpage)$/;"	f
+M.git_clean	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/tree/modifiers/toggles.lua	/^function M.git_clean()$/;"	f
+M.git_ignored	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/tree/modifiers/toggles.lua	/^function M.git_ignored()$/;"	f
+M.group_empty_folders	neovim/plugged/nvim-tree.lua/lua/nvim-tree/lib.lua	/^function M.group_empty_folders(node)$/;"	f
+M.grow_from_content	neovim/plugged/nvim-tree.lua/lua/nvim-tree/view.lua	/^function M.grow_from_content()$/;"	f
+M.has_loaded	neovim/plugged/nvim-web-devicons/lua/nvim-web-devicons.lua	/^function M.has_loaded()$/;"	f
+M.has_one_child_folder	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/node.lua	/^function M.has_one_child_folder(node)$/;"	f
+M.hi_test	neovim/plugged/nvim-tree.lua/lua/nvim-tree/appearance/diagnostics.lua	/^function M.hi_test()$/;"	f
+M.highlight	neovim/plugged/kanagawa.nvim/lua/kanagawa/highlights/init.lua	/^function M.highlight(highlights, termcolors)$/;"	f
+M.init	neovim/plugged/nvim-tree.lua/lua/nvim-tree/core.lua	/^function M.init(foldername)$/;"	f
+M.inject_node	neovim/plugged/nvim-tree.lua/lua/nvim-tree/utils.lua	/^function M.inject_node(f)$/;"	f
+M.is_buf_valid	neovim/plugged/nvim-tree.lua/lua/nvim-tree/view.lua	/^function M.is_buf_valid(bufnr)$/;"	f
+M.is_copied	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/fs/copy-paste.lua	/^function M.is_copied(node)$/;"	f
+M.is_cut	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/fs/copy-paste.lua	/^function M.is_cut(node)$/;"	f
+M.is_executable	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/node-builders.lua	/^function M.is_executable(absolute_path)$/;"	f
+M.is_fs_event_capable	neovim/plugged/nvim-tree.lua/lua/nvim-tree/watcher.lua	/^function M.is_fs_event_capable(path)$/;"	f
+M.is_git_ignored	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/node.lua	/^function M.is_git_ignored(node)$/;"	f
+M.is_modified	neovim/plugged/nvim-tree.lua/lua/nvim-tree/buffers.lua	/^function M.is_modified(node)$/;"	f
+M.is_nvim_tree_buf	neovim/plugged/nvim-tree.lua/lua/nvim-tree/utils.lua	/^function M.is_nvim_tree_buf(bufnr)$/;"	f
+M.is_opened	neovim/plugged/nvim-tree.lua/lua/nvim-tree/buffers.lua	/^function M.is_opened(node)$/;"	f
+M.is_root_folder_visible	neovim/plugged/nvim-tree.lua/lua/nvim-tree/view.lua	/^function M.is_root_folder_visible(cwd)$/;"	f
+M.is_visible	neovim/plugged/nvim-tree.lua/lua/nvim-tree/view.lua	/^function M.is_visible(opts)$/;"	f
+M.key_by	neovim/plugged/nvim-tree.lua/lua/nvim-tree/utils.lua	/^function M.key_by(tbl, key)$/;"	f
+M.line	neovim/plugged/nvim-tree.lua/lua/nvim-tree/log.lua	/^function M.line(typ, fmt, ...)$/;"	f
+M.link	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/node-builders.lua	/^function M.link(parent, absolute_path, name, fs_stat)$/;"	f
+M.load	neovim/plugged/kanagawa.nvim/lua/kanagawa/init.lua	/^function M.load(theme)$/;"	f
+M.load_compiled	neovim/plugged/kanagawa.nvim/lua/kanagawa/utils.lua	/^function M.load_compiled(theme)$/;"	f
+M.load_project_status	neovim/plugged/nvim-tree.lua/lua/nvim-tree/git/init.lua	/^function M.load_project_status(path)$/;"	f
+M.migrate_legacy_options	neovim/plugged/nvim-tree.lua/lua/nvim-tree/legacy.lua	/^function M.migrate_legacy_options(opts)$/;"	f
+M.move	neovim/plugged/nvim-treehopper/lua/tsht.lua	/^function M.move(opts)$/;"	f
+M.move_missing_val	neovim/plugged/nvim-tree.lua/lua/nvim-tree/utils.lua	/^function M.move_missing_val(src, src_path, src_pos, dst, dst_path, dst_pos, remove)$/;"	f
+M.no_bookmark	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/tree/modifiers/toggles.lua	/^function M.no_bookmark()$/;"	f
+M.no_buffer	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/tree/modifiers/toggles.lua	/^function M.no_buffer()$/;"	f
+M.node	neovim/plugged/nvim-tree.lua/lua/nvim-tree/log.lua	/^function M.node(typ, node, fmt, ...)$/;"	f
+M.node_destroy	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/node.lua	/^function M.node_destroy(node)$/;"	f
+M.nodes	neovim/plugged/nvim-treehopper/lua/tsht.lua	/^function M.nodes(opts)$/;"	f
+M.open	neovim/plugged/nvim-tree.lua/lua/nvim-tree/lib.lua	/^function M.open(opts)$/;"	f
+M.open	neovim/plugged/nvim-tree.lua/lua/nvim-tree/view.lua	/^function M.open(options)$/;"	f
+M.open_in_win	neovim/plugged/nvim-tree.lua/lua/nvim-tree/view.lua	/^function M.open_in_win(opts)$/;"	f
+M.open_on_directory	neovim/plugged/nvim-tree.lua/lua/nvim-tree.lua	/^function M.open_on_directory()$/;"	f
+M.paste	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/fs/copy-paste.lua	/^function M.paste(node)$/;"	f
+M.path_add_trailing	neovim/plugged/nvim-tree.lua/lua/nvim-tree/utils.lua	/^function M.path_add_trailing(path)$/;"	f
+M.path_basename	neovim/plugged/nvim-tree.lua/lua/nvim-tree/utils.lua	/^function M.path_basename(path)$/;"	f
+M.path_join	neovim/plugged/nvim-tree.lua/lua/nvim-tree/utils.lua	/^function M.path_join(paths)$/;"	f
+M.path_relative	neovim/plugged/nvim-tree.lua/lua/nvim-tree/utils.lua	/^function M.path_relative(path, relative_to)$/;"	f
+M.path_remove_trailing	neovim/plugged/nvim-tree.lua/lua/nvim-tree/utils.lua	/^function M.path_remove_trailing(path)$/;"	f
+M.path_split	neovim/plugged/nvim-tree.lua/lua/nvim-tree/utils.lua	/^function M.path_split(path)$/;"	f
+M.place_cursor_on_node	neovim/plugged/nvim-tree.lua/lua/nvim-tree.lua	/^function M.place_cursor_on_node()$/;"	f
+M.prepare	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/filters.lua	/^function M.prepare(git_status)$/;"	f
+M.print_clipboard	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/fs/copy-paste.lua	/^function M.print_clipboard()$/;"	f
+M.profile_end	neovim/plugged/nvim-tree.lua/lua/nvim-tree/log.lua	/^function M.profile_end(profile)$/;"	f
+M.profile_start	neovim/plugged/nvim-tree.lua/lua/nvim-tree/log.lua	/^function M.profile_start(fmt, ...)$/;"	f
+M.prompt	neovim/plugged/nvim-tree.lua/lua/nvim-tree/lib.lua	/^function M.prompt(prompt_input, prompt_select, items_short, items_long, kind, callback)$/;"	f
+M.purge_all_state	neovim/plugged/nvim-tree.lua/lua/nvim-tree.lua	/^function M.purge_all_state()$/;"	f
+M.purge_state	neovim/plugged/nvim-tree.lua/lua/nvim-tree/git/init.lua	/^function M.purge_state()$/;"	f
+M.purge_watchers	neovim/plugged/nvim-tree.lua/lua/nvim-tree/watcher.lua	/^function M.purge_watchers()$/;"	f
+M.raw	neovim/plugged/nvim-tree.lua/lua/nvim-tree/log.lua	/^function M.raw(typ, fmt, ...)$/;"	f
+M.read_file	neovim/plugged/nvim-tree.lua/lua/nvim-tree/utils.lua	/^function M.read_file(path)$/;"	f
+M.refresh	neovim/plugged/nvim-web-devicons/lua/nvim-web-devicons.lua	/^function M.refresh()$/;"	f
+M.refresh_node	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/reload.lua	/^function M.refresh_node(node, callback)$/;"	f
+M.refresh_parent_nodes_for_path	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/reload.lua	/^function M.refresh_parent_nodes_for_path(path)$/;"	f
+M.reload	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/reload.lua	/^function M.reload(node, git_status)$/;"	f
+M.reload	neovim/plugged/nvim-tree.lua/lua/nvim-tree/git/init.lua	/^function M.reload()$/;"	f
+M.reload_explorer	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/reloaders.lua	/^function M.reload_explorer()$/;"	f
+M.reload_git	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/reloaders.lua	/^function M.reload_git()$/;"	f
+M.reload_modified	neovim/plugged/nvim-tree.lua/lua/nvim-tree/buffers.lua	/^function M.reload_modified()$/;"	f
+M.reload_node_status	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/reloaders.lua	/^function M.reload_node_status(parent_node, projects)$/;"	f
+M.reload_project	neovim/plugged/nvim-tree.lua/lua/nvim-tree/git/init.lua	/^function M.reload_project(toplevel, path, callback)$/;"	f
+M.remove	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/fs/remove-file.lua	/^function M.remove(node)$/;"	f
+M.remove	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/fs/trash.lua	/^function M.remove(node)$/;"	f
+M.rename	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/fs/rename-file.lua	/^function M.rename(node, to)$/;"	f
+M.rename_loaded_buffers	neovim/plugged/nvim-tree.lua/lua/nvim-tree/utils.lua	/^function M.rename_loaded_buffers(old_path, new_path)$/;"	f
+M.render_hl	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/init.lua	/^function M.render_hl(bufnr, hl)$/;"	f
+M.render_path	neovim/plugged/nvim-tree.lua/lua/nvim-tree/notify.lua	/^function M.render_path(path)$/;"	f
+M.reposition_window	neovim/plugged/nvim-tree.lua/lua/nvim-tree/view.lua	/^function M.reposition_window()$/;"	f
+M.reset_config	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/components/icons.lua	/^function M.reset_config()$/;"	f
+M.reset_explorer	neovim/plugged/nvim-tree.lua/lua/nvim-tree/core.lua	/^function M.reset_explorer()$/;"	f
+M.reset_winhl	neovim/plugged/nvim-tree.lua/lua/nvim-tree/view.lua	/^function M.reset_winhl()$/;"	f
+M.resize	neovim/plugged/nvim-tree.lua/lua/nvim-tree/view.lua	/^function M.resize(size)$/;"	f
+M.restore_tab_state	neovim/plugged/nvim-tree.lua/lua/nvim-tree/view.lua	/^function M.restore_tab_state()$/;"	f
+M.run_file_command	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/node/run-command.lua	/^function M.run_file_command(node)$/;"	f
+M.select	neovim/plugged/nvim-tree.lua/lua/nvim-tree/marks/navigation.lua	/^function M.select()$/;"	f
+M.set_cursor	neovim/plugged/nvim-tree.lua/lua/nvim-tree/view.lua	/^function M.set_cursor(opts)$/;"	f
+M.set_default_icon	neovim/plugged/nvim-web-devicons/lua/nvim-web-devicons.lua	/^function M.set_default_icon(icon, color, cterm_color)$/;"	f
+M.set_icon	neovim/plugged/nvim-web-devicons/lua/nvim-web-devicons.lua	/^function M.set_icon(user_icons)$/;"	f
+M.set_icon_by_filetype	neovim/plugged/nvim-web-devicons/lua/nvim-web-devicons.lua	/^function M.set_icon_by_filetype(user_filetypes)$/;"	f
+M.set_inspect_opts	neovim/plugged/nvim-tree.lua/lua/nvim-tree/log.lua	/^function M.set_inspect_opts(opts)$/;"	f
+M.set_target_win	neovim/plugged/nvim-tree.lua/lua/nvim-tree/lib.lua	/^function M.set_target_win()$/;"	f
+M.set_up_highlights	neovim/plugged/nvim-web-devicons/lua/nvim-web-devicons.lua	/^function M.set_up_highlights(allow_override)$/;"	f
+M.setup	neovim/plugged/kanagawa.nvim/lua/kanagawa/colors.lua	/^function M.setup(opts)$/;"	f
+M.setup	neovim/plugged/kanagawa.nvim/lua/kanagawa/highlights/editor.lua	/^function M.setup(colors, config)$/;"	f
+M.setup	neovim/plugged/kanagawa.nvim/lua/kanagawa/highlights/init.lua	/^function M.setup(colors, config)$/;"	f
+M.setup	neovim/plugged/kanagawa.nvim/lua/kanagawa/highlights/lsp.lua	/^function M.setup(colors, config)$/;"	f
+M.setup	neovim/plugged/kanagawa.nvim/lua/kanagawa/highlights/plugins.lua	/^function M.setup(colors, config)$/;"	f
+M.setup	neovim/plugged/kanagawa.nvim/lua/kanagawa/highlights/syntax.lua	/^function M.setup(colors, config)$/;"	f
+M.setup	neovim/plugged/kanagawa.nvim/lua/kanagawa/highlights/treesitter.lua	/^function M.setup(colors, config)$/;"	f
+M.setup	neovim/plugged/kanagawa.nvim/lua/kanagawa/init.lua	/^function M.setup(config)$/;"	f
+M.setup	neovim/plugged/nvim-tree.lua/lua/nvim-tree.lua	/^function M.setup(conf)$/;"	f
+M.setup	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/fs/copy-paste.lua	/^function M.setup(opts)$/;"	f
+M.setup	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/fs/init.lua	/^function M.setup(opts)$/;"	f
+M.setup	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/fs/remove-file.lua	/^function M.setup(opts)$/;"	f
+M.setup	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/fs/rename-file.lua	/^function M.setup(opts)$/;"	f
+M.setup	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/fs/trash.lua	/^function M.setup(opts)$/;"	f
+M.setup	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/init.lua	/^function M.setup(opts)$/;"	f
+M.setup	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/node/file-popup.lua	/^function M.setup(opts)$/;"	f
+M.setup	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/node/init.lua	/^function M.setup(opts)$/;"	f
+M.setup	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/node/open-file.lua	/^function M.setup(opts)$/;"	f
+M.setup	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/node/system-open.lua	/^function M.setup(opts)$/;"	f
+M.setup	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/root/change-dir.lua	/^function M.setup(options)$/;"	f
+M.setup	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/root/init.lua	/^function M.setup(opts)$/;"	f
+M.setup	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/tree/find-file.lua	/^function M.setup(opts)$/;"	f
+M.setup	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/tree/init.lua	/^function M.setup(opts)$/;"	f
+M.setup	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/tree/modifiers/expand-all.lua	/^function M.setup(opts)$/;"	f
+M.setup	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/tree/modifiers/init.lua	/^function M.setup(opts)$/;"	f
+M.setup	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/tree/open.lua	/^function M.setup(opts)$/;"	f
+M.setup	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/tree/toggle.lua	/^function M.setup(opts)$/;"	f
+M.setup	neovim/plugged/nvim-tree.lua/lua/nvim-tree/appearance/init.lua	/^function M.setup()$/;"	f
+M.setup	neovim/plugged/nvim-tree.lua/lua/nvim-tree/buffers.lua	/^function M.setup(opts)$/;"	f
+M.setup	neovim/plugged/nvim-tree.lua/lua/nvim-tree/commands.lua	/^function M.setup()$/;"	f
+M.setup	neovim/plugged/nvim-tree.lua/lua/nvim-tree/diagnostics.lua	/^function M.setup(opts)$/;"	f
+M.setup	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/explore.lua	/^function M.setup(opts)$/;"	f
+M.setup	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/filters.lua	/^function M.setup(opts)$/;"	f
+M.setup	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/init.lua	/^function M.setup(opts)$/;"	f
+M.setup	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/node.lua	/^function M.setup(opts)$/;"	f
+M.setup	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/reload.lua	/^function M.setup(opts)$/;"	f
+M.setup	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/sorters.lua	/^function M.setup(opts)$/;"	f
+M.setup	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/watch.lua	/^function M.setup(opts)$/;"	f
+M.setup	neovim/plugged/nvim-tree.lua/lua/nvim-tree/git/init.lua	/^function M.setup(opts)$/;"	f
+M.setup	neovim/plugged/nvim-tree.lua/lua/nvim-tree/git/utils.lua	/^function M.setup(opts)$/;"	f
+M.setup	neovim/plugged/nvim-tree.lua/lua/nvim-tree/help.lua	/^function M.setup(opts)$/;"	f
+M.setup	neovim/plugged/nvim-tree.lua/lua/nvim-tree/keymap.lua	/^function M.setup(opts)$/;"	f
+M.setup	neovim/plugged/nvim-tree.lua/lua/nvim-tree/lib.lua	/^function M.setup(opts)$/;"	f
+M.setup	neovim/plugged/nvim-tree.lua/lua/nvim-tree/live-filter.lua	/^function M.setup(opts)$/;"	f
+M.setup	neovim/plugged/nvim-tree.lua/lua/nvim-tree/log.lua	/^function M.setup(opts)$/;"	f
+M.setup	neovim/plugged/nvim-tree.lua/lua/nvim-tree/marks/bulk-delete.lua	/^function M.setup(opts)$/;"	f
+M.setup	neovim/plugged/nvim-tree.lua/lua/nvim-tree/marks/bulk-move.lua	/^function M.setup(opts)$/;"	f
+M.setup	neovim/plugged/nvim-tree.lua/lua/nvim-tree/marks/bulk-trash.lua	/^function M.setup(opts)$/;"	f
+M.setup	neovim/plugged/nvim-tree.lua/lua/nvim-tree/marks/init.lua	/^function M.setup(opts)$/;"	f
+M.setup	neovim/plugged/nvim-tree.lua/lua/nvim-tree/notify.lua	/^function M.setup(opts)$/;"	f
+M.setup	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/components/diagnostics.lua	/^function M.setup(opts)$/;"	f
+M.setup	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/components/icons.lua	/^function M.setup(opts)$/;"	f
+M.setup	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/components/padding.lua	/^function M.setup(opts)$/;"	f
+M.setup	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/init.lua	/^function M.setup(opts)$/;"	f
+M.setup	neovim/plugged/nvim-tree.lua/lua/nvim-tree/view.lua	/^function M.setup(opts)$/;"	f
+M.setup	neovim/plugged/nvim-tree.lua/lua/nvim-tree/watcher.lua	/^function M.setup(opts)$/;"	f
+M.setup	neovim/plugged/nvim-web-devicons/lua/nvim-web-devicons.lua	/^function M.setup(opts)$/;"	f
+M.setup 	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/components/full-name.lua	/^M.setup = function(opts)$/;"	f
+M.should_filter	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/filters.lua	/^function M.should_filter(path, fs_stat, status)$/;"	f
+M.should_show_untracked	neovim/plugged/nvim-tree.lua/lua/nvim-tree/git/utils.lua	/^function M.should_show_untracked(cwd)$/;"	f
+M.sort	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/sorters.lua	/^function M.sort(t)$/;"	f
+M.start_filtering	neovim/plugged/nvim-tree.lua/lua/nvim-tree/live-filter.lua	/^function M.start_filtering()$/;"	f
+M.str_find	neovim/plugged/nvim-tree.lua/lua/nvim-tree/utils.lua	/^function M.str_find(haystack, needle)$/;"	f
+M.subscribe	neovim/plugged/nvim-tree.lua/lua/nvim-tree/events.lua	/^function M.subscribe(event_name, handler)$/;"	f
+M.supports_title	neovim/plugged/nvim-tree.lua/lua/nvim-tree/notify.lua	/^function M.supports_title()$/;"	f
+M.tab_enter	neovim/plugged/nvim-tree.lua/lua/nvim-tree.lua	/^function M.tab_enter()$/;"	f
+M.table_create_missing	neovim/plugged/nvim-tree.lua/lua/nvim-tree/utils.lua	/^function M.table_create_missing(tbl, path)$/;"	f
+M.toggle	neovim/plugged/nvim-tree.lua/lua/nvim-tree/help.lua	/^function M.toggle()$/;"	f
+M.toggle_file_info	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/node/file-popup.lua	/^function M.toggle_file_info(node)$/;"	f
+M.toggle_mark	neovim/plugged/nvim-tree.lua/lua/nvim-tree/marks/init.lua	/^function M.toggle_mark(node)$/;"	f
+M.ungroup_empty_folders	neovim/plugged/nvim-tree.lua/lua/nvim-tree/lib.lua	/^function M.ungroup_empty_folders(node)$/;"	f
+M.update	neovim/plugged/nvim-tree.lua/lua/nvim-tree/diagnostics.lua	/^function M.update()$/;"	f
+M.update_git_status	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/node.lua	/^function M.update_git_status(node, parent_ignored, status)$/;"	f
+M.winid	neovim/plugged/nvim-tree.lua/lua/nvim-tree/view.lua	/^function M.winid(opts)$/;"	f
+M[x.name] 	neovim/plugged/nvim-tree.lua/lua/nvim-tree/notify.lua	/^    M[x.name] = function(msg)$/;"	f
+NodeIterator.builder	neovim/plugged/nvim-tree.lua/lua/nvim-tree/iterators/node-iterator.lua	/^function NodeIterator.builder(nodes)$/;"	f
+NodeIterator:applier	neovim/plugged/nvim-tree.lua/lua/nvim-tree/iterators/node-iterator.lua	/^function NodeIterator:applier(f)$/;"	f
+NodeIterator:hidden	neovim/plugged/nvim-tree.lua/lua/nvim-tree/iterators/node-iterator.lua	/^function NodeIterator:hidden()$/;"	f
+NodeIterator:iterate	neovim/plugged/nvim-tree.lua/lua/nvim-tree/iterators/node-iterator.lua	/^function NodeIterator:iterate()$/;"	f
+NodeIterator:matcher	neovim/plugged/nvim-tree.lua/lua/nvim-tree/iterators/node-iterator.lua	/^function NodeIterator:matcher(f)$/;"	f
+NodeIterator:recursor	neovim/plugged/nvim-tree.lua/lua/nvim-tree/iterators/node-iterator.lua	/^function NodeIterator:recursor(f)$/;"	f
+PAUSE_BEFORE_EXIT	neovim/plugged/vim-gutentags/plat/win32/update_tags.cmd	/^    set PAUSE_BEFORE_EXIT=1$/;"	v
+PAUSE_BEFORE_EXIT	neovim/plugged/vim-gutentags/plat/win32/update_tags.cmd	/^set PAUSE_BEFORE_EXIT=0$/;"	v
+POST_PROCESS_CMD	neovim/plugged/vim-gutentags/plat/win32/update_tags.cmd	/^    set POST_PROCESS_CMD=%~2$/;"	v
+POST_PROCESS_CMD	neovim/plugged/vim-gutentags/plat/win32/update_tags.cmd	/^set POST_PROCESS_CMD=$/;"	v
+PROJECT_ROOT	neovim/plugged/vim-gutentags/plat/win32/update_tags.cmd	/^    set PROJECT_ROOT=%~2$/;"	v
+PROJECT_ROOT	neovim/plugged/vim-gutentags/plat/win32/update_tags.cmd	/^set PROJECT_ROOT=$/;"	v
+PROJ_ROOT	neovim/plugged/vim-gutentags/plat/win32/update_scopedb.cmd	/^    set PROJ_ROOT=%~2$/;"	v
+ParseArgs	neovim/plugged/vim-gutentags/plat/win32/update_gtags.cmd	/^:ParseArgs$/;"	l
+ParseArgs	neovim/plugged/vim-gutentags/plat/win32/update_scopedb.cmd	/^:ParseArgs$/;"	l
+ParseArgs	neovim/plugged/vim-gutentags/plat/win32/update_tags.cmd	/^:ParseArgs$/;"	l
+Runner.run	neovim/plugged/nvim-tree.lua/lua/nvim-tree/git/runner.lua	/^function Runner.run(opts, callback)$/;"	f
+Runner:_finalise	neovim/plugged/nvim-tree.lua/lua/nvim-tree/git/runner.lua	/^function Runner:_finalise(opts)$/;"	f
+Runner:_getopts	neovim/plugged/nvim-tree.lua/lua/nvim-tree/git/runner.lua	/^function Runner:_getopts(stdout_handle, stderr_handle)$/;"	f
+Runner:_handle_incoming_data	neovim/plugged/nvim-tree.lua/lua/nvim-tree/git/runner.lua	/^function Runner:_handle_incoming_data(prev_output, incoming)$/;"	f
+Runner:_log_raw_output	neovim/plugged/nvim-tree.lua/lua/nvim-tree/git/runner.lua	/^function Runner:_log_raw_output(output)$/;"	f
+Runner:_parse_status_output	neovim/plugged/nvim-tree.lua/lua/nvim-tree/git/runner.lua	/^function Runner:_parse_status_output(status, path)$/;"	f
+Runner:_run_git_job	neovim/plugged/nvim-tree.lua/lua/nvim-tree/git/runner.lua	/^function Runner:_run_git_job(callback)$/;"	f
+Runner:_wait	neovim/plugged/nvim-tree.lua/lua/nvim-tree/git/runner.lua	/^function Runner:_wait()$/;"	f
+ShowUsage	neovim/plugged/vim-gutentags/plat/unix/update_gtags.sh	/^ShowUsage() {$/;"	f
+ShowUsage	neovim/plugged/vim-gutentags/plat/unix/update_pyscopedb.sh	/^ShowUsage() {$/;"	f
+ShowUsage	neovim/plugged/vim-gutentags/plat/unix/update_scopedb.sh	/^ShowUsage() {$/;"	f
+ShowUsage	neovim/plugged/vim-gutentags/plat/unix/update_tags.sh	/^ShowUsage() {$/;"	f
+TAGS_FILE	neovim/plugged/vim-gutentags/plat/win32/update_tags.cmd	/^    set TAGS_FILE=%~2$/;"	v
+TAGS_FILE	neovim/plugged/vim-gutentags/plat/win32/update_tags.cmd	/^set TAGS_FILE=tags$/;"	v
+TreehopperHighlight	neovim/plugged/nvim-treehopper/plugin/tsht.vim	/^augroup TreehopperHighlight$/;"	a
+UPDATED_SOURCE	neovim/plugged/vim-gutentags/plat/win32/update_tags.cmd	/^    set UPDATED_SOURCE=%~2$/;"	v
+UPDATED_SOURCE	neovim/plugged/vim-gutentags/plat/win32/update_tags.cmd	/^set UPDATED_SOURCE=$/;"	v
+Unlock	neovim/plugged/vim-gutentags/plat/win32/update_tags.cmd	/^:Unlock$/;"	l
+Usage	neovim/plugged/vim-gutentags/plat/win32/update_gtags.cmd	/^:Usage$/;"	l
+Usage	neovim/plugged/vim-gutentags/plat/win32/update_scopedb.cmd	/^:Usage$/;"	l
+Usage	neovim/plugged/vim-gutentags/plat/win32/update_tags.cmd	/^:Usage$/;"	l
+VIM_COLORTEMPLATE_VERSION	neovim/plugged/nvim-web-devicons/Makefile	/^VIM_COLORTEMPLATE_VERSION = 2.2.3$/;"	m
+Watcher:destroy	neovim/plugged/nvim-tree.lua/lua/nvim-tree/watcher.lua	/^function Watcher:destroy()$/;"	f
+Watcher:new	neovim/plugged/nvim-tree.lua/lua/nvim-tree/watcher.lua	/^function Watcher:new(path, files, callback, data)$/;"	f
+Watcher:start	neovim/plugged/nvim-tree.lua/lua/nvim-tree/watcher.lua	/^function Watcher:start()$/;"	f
+["@lsp.type.magicFunction"] 	neovim/plugged/kanagawa.nvim/lua/kanagawa/highlights/lsp.lua	/^            ["@lsp.type.magicFunction"] = { link = "@function.builtin" },$/;"	f
+["@lsp.type.method"] 	neovim/plugged/kanagawa.nvim/lua/kanagawa/highlights/lsp.lua	/^            ["@lsp.type.method"] = { link = "@function.method" }, -- Function$/;"	f
+["@lsp.typemod.function.builtin"] 	neovim/plugged/kanagawa.nvim/lua/kanagawa/highlights/lsp.lua	/^            ["@lsp.typemod.function.builtin"] = { link = "@function.builtin"},$/;"	f
+["@lsp.typemod.function.defaultLibrary"] 	neovim/plugged/kanagawa.nvim/lua/kanagawa/highlights/lsp.lua	/^            ["@lsp.typemod.function.defaultLibrary"] = { link = "@function.builtin"},$/;"	f
+["@lsp.typemod.function.readonly"] 	neovim/plugged/kanagawa.nvim/lua/kanagawa/highlights/lsp.lua	/^            ["@lsp.typemod.function.readonly"] = { fg = theme.syn.fun, bold = true }$/;"	f
+["@lsp.typemod.method.defaultLibrary"] 	neovim/plugged/kanagawa.nvim/lua/kanagawa/highlights/lsp.lua	/^            ["@lsp.typemod.method.defaultLibrary"] = { link = "@function.builtin"},$/;"	f
+_G.setup 	neovim/plugged/nvim-tree.lua/.github/ISSUE_TEMPLATE/nvt-min.lua	/^_G.setup = function()$/;"	f
+__call 	neovim/plugged/kanagawa.nvim/lua/kanagawa/lib/color.lua	/^    __call = function(_, ...)$/;"	f
+__tostring 	neovim/plugged/kanagawa.nvim/lua/kanagawa/lib/color.lua	/^    __tostring = function(self)$/;"	f
+_apply_fn_on_node 	neovim/plugged/nvim-tree.lua/lua/nvim-tree/iterators/node-iterator.lua	/^    _apply_fn_on_node = function(_) end,$/;"	f
+_decremental	neovim/init.vim	/^      node_decremental = "grm",$/;"	m
+_draw	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/init.lua	/^local function _draw(bufnr, lines, hl_args, signs)$/;"	f
+_filter_hidden 	neovim/plugged/nvim-tree.lua/lua/nvim-tree/iterators/node-iterator.lua	/^    _filter_hidden = function(node)$/;"	f
+_handleOldOptions	neovim/plugged/vim-gutentags/autoload/gutentags/ctags.vim	/^function! s:_handleOldOptions() abort$/;"	f
+_incremental	neovim/init.vim	/^      node_incremental = "grn",$/;"	m
+_match 	neovim/plugged/nvim-tree.lua/lua/nvim-tree/iterators/node-iterator.lua	/^    _match = function(_) end,$/;"	f
+_recurse_with 	neovim/plugged/nvim-tree.lua/lua/nvim-tree/iterators/node-iterator.lua	/^    _recurse_with = function(node)$/;"	f
+add_db	neovim/plugged/vim-gutentags/autoload/gutentags/gtags_cscope.vim	/^function! s:add_db(db_file) abort$/;"	f
+add_mark	neovim/plugged/nvim-tree.lua/lua/nvim-tree/marks/init.lua	/^local function add_mark(node)$/;"	f
+add_profiling_to	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/root/change-dir.lua	/^local function add_profiling_to(f)$/;"	f
+add_to_end	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/builder.lua	/^  local function add_to_end(t1, t2)$/;"	f
+and M.custom_function	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/filters.lua	/^  if M.custom_function and M.custom_function(path) then$/;"	f
+argparse	neovim/plugged/kanagawa.nvim/palette.py	/^import argparse$/;"	i
+blendRGB	neovim/plugged/kanagawa.nvim/lua/kanagawa/lib/color.lua	/^local function blendRGB(a, b, r)$/;"	f
+bookmark	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/filters.lua	/^local function bookmark(path, path_type, bookmarks)$/;"	f
+buf	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/filters.lua	/^local function buf(path, bufinfo)$/;"	f
+buf_match	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/tree/modifiers/collapse-all.lua	/^local function buf_match()$/;"	f
+cache_project_root	neovim/plugged/vim-gutentags/autoload/gutentags.vim	/^function! s:cache_project_root(path) abort$/;"	f
+calculate_overlay_win_width	neovim/plugged/nvim-tree.lua/lua/nvim-tree/live-filter.lua	/^local function calculate_overlay_win_width()$/;"	f
+callback	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/watch.lua	/^  local function callback(watcher)$/;"	f
+callback 	neovim/plugged/nvim-tree.lua/.github/ISSUE_TEMPLATE/nvt-min.lua	/^  callback = function()$/;"	f
+callback 	neovim/plugged/nvim-tree.lua/lua/nvim-tree.lua	/^      callback = function()$/;"	f
+callback 	neovim/plugged/nvim-tree.lua/lua/nvim-tree.lua	/^      callback = function(event)$/;"	f
+callback 	neovim/plugged/nvim-tree.lua/lua/nvim-tree.lua	/^    callback = function()$/;"	f
+callback 	neovim/plugged/nvim-tree.lua/lua/nvim-tree.lua	/^    callback = function(data)$/;"	f
+callback 	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/node/open-file.lua	/^      callback = function()$/;"	f
+callback 	neovim/plugged/nvim-tree.lua/lua/nvim-tree/live-filter.lua	/^      callback = function()$/;"	f
+callback 	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/components/full-name.lua	/^    callback = function()$/;"	f
+cd	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/root/change-dir.lua	/^local function cd(global, path)$/;"	f
+check_config	neovim/plugged/kanagawa.nvim/lua/kanagawa/init.lua	/^local function check_config(config)$/;"	f
+check_marker	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/components/padding.lua	/^  local function check_marker(symbol)$/;"	f
+check_siblings_for_folder	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/components/padding.lua	/^local function check_siblings_for_folder(node, with_arrows)$/;"	f
+clean_input_cwd	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/root/change-dir.lua	/^local function clean_input_cwd(name)$/;"	f
+clear_buffer	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/fs/remove-file.lua	/^local function clear_buffer(absolute_path)$/;"	f
+clear_buffer	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/fs/trash.lua	/^local function clear_buffer(absolute_path)$/;"	f
+clone_node	neovim/plugged/nvim-tree.lua/lua/nvim-tree/lib.lua	/^local function clone_node(node)$/;"	f
+close	neovim/plugged/nvim-tree.lua/lua/nvim-tree/help.lua	/^local function close()$/;"	f
+close	neovim/plugged/nvim-tree.lua/lua/nvim-tree/view.lua	/^local function close(tabpage)$/;"	f
+close_windows	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/fs/remove-file.lua	/^local function close_windows(windows)$/;"	f
+co_resume	neovim/plugged/nvim-treehopper/lua/tsht.lua	/^local function co_resume(co)$/;"	f
+color	neovim/plugged/kanagawa.nvim/palette.py	/^from skimage import color, io$/;"	i
+colorsys	neovim/plugged/kanagawa.nvim/palette.py	/^import colorsys$/;"	i
+command 	neovim/plugged/nvim-tree.lua/lua/nvim-tree/commands.lua	/^    command = function()$/;"	f
+command 	neovim/plugged/nvim-tree.lua/lua/nvim-tree/commands.lua	/^    command = function(c)$/;"	f
+compute	neovim/plugged/nvim-tree.lua/lua/nvim-tree/help.lua	/^local function compute()$/;"	f
+config_file_icon	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/components/icons.lua	/^local function config_file_icon()$/;"	f
+config_folder_icon	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/components/icons.lua	/^local function config_folder_icon()$/;"	f
+config_symlinks	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/components/icons.lua	/^local function config_symlinks()$/;"	f
+configure_buffer_overlay	neovim/plugged/nvim-tree.lua/lua/nvim-tree/live-filter.lua	/^local function configure_buffer_overlay()$/;"	f
+copy_to_clipboard	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/fs/copy-paste.lua	/^local function copy_to_clipboard(content)$/;"	f
+create_and_notify	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/fs/create-file.lua	/^local function create_and_notify(file)$/;"	f
+create_buffer	neovim/plugged/nvim-tree.lua/lua/nvim-tree/view.lua	/^local function create_buffer(bufnr)$/;"	f
+create_nvim_tree_autocmd	neovim/plugged/nvim-tree.lua/lua/nvim-tree.lua	/^  local function create_nvim_tree_autocmd(name, custom_opts)$/;"	f
+create_overlay	neovim/plugged/nvim-tree.lua/lua/nvim-tree/live-filter.lua	/^local function create_overlay()$/;"	f
+custom	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/filters.lua	/^local function custom(path)$/;"	f
+custom 	neovim/plugged/nvim-tree.lua/lua/nvim-tree.lua	/^    custom = { "function" },$/;"	f
+custom_function 	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/filters.lua	/^  custom_function = nil,$/;"	f
+darken_color	neovim/plugged/nvim-web-devicons/scripts/generate_colors.lua	/^local function darken_color(rrggbb)$/;"	f
+deprecated	neovim/plugged/nvim-tree.lua/lua/nvim-tree/legacy.lua	/^local function deprecated(opts)$/;"	f
+dispatch	neovim/plugged/nvim-tree.lua/lua/nvim-tree/events.lua	/^local function dispatch(event_name, payload)$/;"	f
+do_copy	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/fs/copy-paste.lua	/^local function do_copy(source, destination)$/;"	f
+do_cut	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/fs/copy-paste.lua	/^local function do_cut(source, destination)$/;"	f
+do_delete	neovim/plugged/nvim-tree.lua/lua/nvim-tree/marks/bulk-delete.lua	/^local function do_delete(nodes)$/;"	f
+do_paste	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/fs/copy-paste.lua	/^local function do_paste(node, action_type, action_fn)$/;"	f
+do_remove	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/fs/remove-file.lua	/^  local function do_remove()$/;"	f
+do_single_paste	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/fs/copy-paste.lua	/^local function do_single_paste(source, dest, action_type, action_fn)$/;"	f
+do_trash	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/fs/trash.lua	/^  local function do_trash()$/;"	f
+do_trash	neovim/plugged/nvim-tree.lua/lua/nvim-tree/marks/bulk-trash.lua	/^local function do_trash(nodes)$/;"	f
+dotfile	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/filters.lua	/^local function dotfile(path)$/;"	f
+dragon 	neovim/plugged/kanagawa.nvim/lua/kanagawa/themes.lua	/^    dragon = function(palette)$/;"	f
+drop	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/node/open-file.lua	/^local function drop(filename)$/;"	f
+edit	neovim/plugged/nvim-tree.lua/lua/nvim-tree/api.lua	/^local function edit(mode, node)$/;"	f
+edit_in_current_buf	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/node/open-file.lua	/^local function edit_in_current_buf(filename)$/;"	f
+effective_win_width	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/components/full-name.lua	/^local function effective_win_width()$/;"	f
+elseif type(size) 	neovim/plugged/nvim-tree.lua/lua/nvim-tree/view.lua	/^  elseif type(size) == "function" then$/;"	f
+empty	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/components/icons.lua	/^local function empty()$/;"	f
+err_fmt	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/fs/rename-file.lua	/^local function err_fmt(from, to, reason)$/;"	f
+error_exit	neovim/plugged/nvim-web-devicons/scripts/generate_colors.lua	/^local function error_exit(msg, rc)$/;"	f
+exclude 	neovim/plugged/nvim-tree.lua/lua/nvim-tree.lua	/^    exclude = { "function" },$/;"	f
+expand	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/tree/modifiers/expand-all.lua	/^local function expand(node)$/;"	f
+expand_node	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/moves/item.lua	/^local function expand_node(node)$/;"	f
+first_win_id	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/node/open-file.lua	/^local function first_win_id()$/;"	f
+folders_or_files_first	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/sorters.lua	/^local function folders_or_files_first(a, b)$/;"	f
+format_item	neovim/plugged/nvim-tree.lua/lua/nvim-tree/lib.lua	/^  local function format_item(short)$/;"	f
+from_cache	neovim/plugged/nvim-tree.lua/lua/nvim-tree/diagnostics.lua	/^local function from_cache(node)$/;"	f
+from_coc	neovim/plugged/nvim-tree.lua/lua/nvim-tree/diagnostics.lua	/^local function from_coc()$/;"	f
+from_nvim_lsp	neovim/plugged/nvim-tree.lua/lua/nvim-tree/diagnostics.lua	/^local function from_nvim_lsp()$/;"	f
+functionStyle 	neovim/plugged/kanagawa.nvim/lua/kanagawa/init.lua	/^    functionStyle = {},$/;"	f
+g:__gutentags_vim_is_leaving	neovim/plugged/vim-gutentags/plugin/gutentags.vim	/^let g:__gutentags_vim_is_leaving = 0$/;"	v
+g:gutentags_add_ctrlp_root_markers	neovim/plugged/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_add_ctrlp_root_markers = get(g:, 'gutentags_add_ctrlp_root_markers', 1)$/;"	v
+g:gutentags_add_default_project_roots	neovim/plugged/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_add_default_project_roots = get(g:, 'gutentags_add_default_project_roots', 1)$/;"	v
+g:gutentags_auto_add_cscope	neovim/plugged/vim-gutentags/autoload/gutentags/cscope.vim	/^    let g:gutentags_auto_add_cscope = 1$/;"	v
+g:gutentags_auto_add_gtags_cscope	neovim/plugged/vim-gutentags/autoload/gutentags/gtags_cscope.vim	/^    let g:gutentags_auto_add_gtags_cscope = 1$/;"	v
+g:gutentags_auto_add_pycscope	neovim/plugged/vim-gutentags/autoload/gutentags/pycscope.vim	/^    let g:gutentags_auto_add_pycscope = 1$/;"	v
+g:gutentags_background_update	neovim/plugged/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_background_update = get(g:, 'gutentags_background_update', 1)$/;"	v
+g:gutentags_cache_dir	neovim/plugged/vim-gutentags/plugin/gutentags.vim	/^    let g:gutentags_cache_dir = ''$/;"	v
+g:gutentags_cache_dir	neovim/plugged/vim-gutentags/plugin/gutentags.vim	/^    let g:gutentags_cache_dir = fnamemodify(g:gutentags_cache_dir, ':p')$/;"	v
+g:gutentags_cache_dir	neovim/plugged/vim-gutentags/plugin/gutentags.vim	/^    let g:gutentags_cache_dir = fnamemodify(g:gutentags_cache_dir, ':s?[\/\\\\]$??')$/;"	v
+g:gutentags_cscope_build_inverted_index	neovim/plugged/vim-gutentags/autoload/gutentags/cscope.vim	/^    let g:gutentags_cscope_build_inverted_index = 0$/;"	v
+g:gutentags_cscope_build_inverted_index_maps	neovim/plugged/vim-gutentags/autoload/gutentags/cscope_maps.vim	/^    let g:gutentags_cscope_build_inverted_index_maps = 0$/;"	v
+g:gutentags_cscope_executable	neovim/plugged/vim-gutentags/autoload/gutentags/cscope.vim	/^    let g:gutentags_cscope_executable = 'cscope'$/;"	v
+g:gutentags_cscope_executable_maps	neovim/plugged/vim-gutentags/autoload/gutentags/cscope_maps.vim	/^    let g:gutentags_cscope_executable_maps = 'cscope'$/;"	v
+g:gutentags_ctags_auto_set_tags	neovim/plugged/vim-gutentags/autoload/gutentags/ctags.vim	/^let g:gutentags_ctags_auto_set_tags = get(g:, 'gutentags_ctags_auto_set_tags', 1)$/;"	v
+g:gutentags_ctags_check_tagfile	neovim/plugged/vim-gutentags/autoload/gutentags/ctags.vim	/^let g:gutentags_ctags_check_tagfile = get(g:, 'gutentags_ctags_check_tagfile', 0)$/;"	v
+g:gutentags_ctags_exclude	neovim/plugged/vim-gutentags/autoload/gutentags/ctags.vim	/^let g:gutentags_ctags_exclude = get(g:, 'gutentags_ctags_exclude', [])$/;"	v
+g:gutentags_ctags_exclude_wildignore	neovim/plugged/vim-gutentags/autoload/gutentags/ctags.vim	/^let g:gutentags_ctags_exclude_wildignore = get(g:, 'gutentags_ctags_exclude_wildignore', 1)$/;"	v
+g:gutentags_ctags_executable	neovim/plugged/vim-gutentags/autoload/gutentags/ctags.vim	/^let g:gutentags_ctags_executable = get(g:, 'gutentags_ctags_executable', 'ctags')$/;"	v
+g:gutentags_ctags_extra_args	neovim/plugged/vim-gutentags/autoload/gutentags/ctags.vim	/^let g:gutentags_ctags_extra_args = get(g:, 'gutentags_ctags_extra_args', [])$/;"	v
+g:gutentags_ctags_options_file	neovim/plugged/vim-gutentags/autoload/gutentags/ctags.vim	/^let g:gutentags_ctags_options_file = get(g:, 'gutentags_ctags_options_file', '.gutctags')$/;"	v
+g:gutentags_ctags_post_process_cmd	neovim/plugged/vim-gutentags/autoload/gutentags/ctags.vim	/^let g:gutentags_ctags_post_process_cmd = get(g:, 'gutentags_ctags_post_process_cmd', '')$/;"	v
+g:gutentags_ctags_tagfile	neovim/plugged/vim-gutentags/autoload/gutentags/ctags.vim	/^let g:gutentags_ctags_tagfile = get(g:, 'gutentags_ctags_tagfile', 'tags')$/;"	v
+g:gutentags_debug	neovim/plugged/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_debug = get(g:, 'gutentags_debug', 0)$/;"	v
+g:gutentags_define_advanced_commands	neovim/plugged/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_define_advanced_commands = get(g:, 'gutentags_define_advanced_commands', 0)$/;"	v
+g:gutentags_enabled	neovim/plugged/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_enabled = get(g:, 'gutentags_enabled', 1)$/;"	v
+g:gutentags_exclude_filetypes	neovim/plugged/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_exclude_filetypes = get(g:, 'gutentags_exclude_filetypes', [])$/;"	v
+g:gutentags_exclude_project_root	neovim/plugged/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_exclude_project_root = get(g:, 'gutentags_exclude_project_root', $/;"	v
+g:gutentags_fake	neovim/plugged/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_fake = get(g:, 'gutentags_fake', 0)$/;"	v
+g:gutentags_file_list_command	neovim/plugged/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_file_list_command = get(g:, 'gutentags_file_list_command', '')$/;"	v
+g:gutentags_generate_on_empty_buffer	neovim/plugged/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_generate_on_empty_buffer = get(g:, 'gutentags_generate_on_empty_buffer', 0)$/;"	v
+g:gutentags_generate_on_missing	neovim/plugged/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_generate_on_missing = get(g:, 'gutentags_generate_on_missing', 1)$/;"	v
+g:gutentags_generate_on_new	neovim/plugged/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_generate_on_new = get(g:, 'gutentags_generate_on_new', 1)$/;"	v
+g:gutentags_generate_on_write	neovim/plugged/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_generate_on_write = get(g:, 'gutentags_generate_on_write', 1)$/;"	v
+g:gutentags_gtags_cscope_executable	neovim/plugged/vim-gutentags/autoload/gutentags/gtags_cscope.vim	/^    let g:gutentags_gtags_cscope_executable = 'gtags-cscope'$/;"	v
+g:gutentags_gtags_dbpath	neovim/plugged/vim-gutentags/autoload/gutentags/gtags_cscope.vim	/^    let g:gutentags_gtags_dbpath = ''$/;"	v
+g:gutentags_gtags_executable	neovim/plugged/vim-gutentags/autoload/gutentags/gtags_cscope.vim	/^    let g:gutentags_gtags_executable = 'gtags'$/;"	v
+g:gutentags_gtags_options_file	neovim/plugged/vim-gutentags/autoload/gutentags/gtags_cscope.vim	/^    let g:gutentags_gtags_options_file = '.gutgtags'$/;"	v
+g:gutentags_init_user_func	neovim/plugged/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_init_user_func = get(g:, 'gutentags_init_user_func', $/;"	v
+g:gutentags_modules	neovim/plugged/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_modules = get(g:, 'gutentags_modules', ['ctags'])$/;"	v
+g:gutentags_pause_after_update	neovim/plugged/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_pause_after_update = get(g:, 'gutentags_pause_after_update', 0)$/;"	v
+g:gutentags_plat_dir	neovim/plugged/vim-gutentags/plugin/gutentags.vim	/^    let g:gutentags_plat_dir = expand('<sfile>:h:h:p') . "\\\\plat\\\\win32\\\\"$/;"	v
+g:gutentags_plat_dir	neovim/plugged/vim-gutentags/plugin/gutentags.vim	/^    let g:gutentags_plat_dir = expand('<sfile>:h:h:p') . '\/plat\/unix\/'$/;"	v
+g:gutentags_project_info	neovim/plugged/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_project_info = get(g:, 'gutentags_project_info', [])$/;"	v
+g:gutentags_project_root	neovim/plugged/vim-gutentags/plugin/gutentags.vim	/^    let g:gutentags_project_root += ['.git', '.hg', '.svn', '.bzr', '_darcs', '_FOSSIL_', '.fslckout']$/;"	v
+g:gutentags_project_root	neovim/plugged/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_project_root = get(g:, 'gutentags_project_root', [])$/;"	v
+g:gutentags_project_root_finder	neovim/plugged/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_project_root_finder = get(g:, 'gutentags_project_root_finder', '')$/;"	v
+g:gutentags_pycscope_executable	neovim/plugged/vim-gutentags/autoload/gutentags/pycscope.vim	/^    let g:gutentags_pycscope_executable = 'pycscope'$/;"	v
+g:gutentags_pyscopefile	neovim/plugged/vim-gutentags/autoload/gutentags/pycscope.vim	/^    let g:gutentags_pyscopefile = 'pycscope.out'$/;"	v
+g:gutentags_res_dir	neovim/plugged/vim-gutentags/plugin/gutentags.vim	/^    let g:gutentags_res_dir = expand('<sfile>:h:h:p') . "\\\\res\\\\"$/;"	v
+g:gutentags_res_dir	neovim/plugged/vim-gutentags/plugin/gutentags.vim	/^    let g:gutentags_res_dir = expand('<sfile>:h:h:p') . '\/res\/'$/;"	v
+g:gutentags_resolve_symlinks	neovim/plugged/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_resolve_symlinks = get(g:, 'gutentags_resolve_symlinks', 0)$/;"	v
+g:gutentags_scopefile	neovim/plugged/vim-gutentags/autoload/gutentags/cscope.vim	/^    let g:gutentags_scopefile = 'cscope.out'$/;"	v
+g:gutentags_scopefile_maps	neovim/plugged/vim-gutentags/autoload/gutentags/cscope_maps.vim	/^    let g:gutentags_scopefile_maps = 'cscope.out'$/;"	v
+g:gutentags_script_ext	neovim/plugged/vim-gutentags/plugin/gutentags.vim	/^    let g:gutentags_script_ext = '.cmd'$/;"	v
+g:gutentags_script_ext	neovim/plugged/vim-gutentags/plugin/gutentags.vim	/^    let g:gutentags_script_ext = '.sh'$/;"	v
+g:gutentags_trace	neovim/plugged/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_trace = get(g:, 'gutentags_trace', 0)$/;"	v
+g:gutentags_use_jobs	neovim/plugged/vim-gutentags/plugin/gutentags.vim	/^let g:gutentags_use_jobs = get(g:, 'gutentags_use_jobs', has('job'))$/;"	v
+g:loaded_devicons	neovim/plugged/nvim-web-devicons/plugin/nvim-web-devicons.vim	/^let g:loaded_devicons = 1$/;"	v
+g:loaded_gutentags	neovim/plugged/vim-gutentags/plugin/gutentags.vim	/^let g:loaded_gutentags = 1$/;"	v
+g:nvim_ts_hint_textobject	neovim/plugged/nvim-treehopper/plugin/tsht.vim	/^let g:nvim_ts_hint_textobject = 1$/;"	v
+g:nvim_web_devicons	neovim/plugged/nvim-web-devicons/plugin/nvim-web-devicons.vim	/^let g:nvim_web_devicons = 1$/;"	v
+gen_iterator	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/tree/modifiers/expand-all.lua	/^local function gen_iterator()$/;"	f
+generate_keymap	neovim/plugged/nvim-tree.lua/lua/nvim-tree/keymap.lua	/^local function generate_keymap(fn)$/;"	f
+generate_lines	neovim/plugged/nvim-web-devicons/scripts/generate_colors.lua	/^local function generate_lines()$/;"	f
+generate_wildignore_options	neovim/plugged/vim-gutentags/autoload/gutentags/ctags.vim	/^function! s:generate_wildignore_options() abort$/;"	f
+get	neovim/plugged/nvim-tree.lua/lua/nvim-tree/marks/navigation.lua	/^local function get(where, node)$/;"	f
+get_alt_or_next_buf	neovim/plugged/nvim-tree.lua/lua/nvim-tree/view.lua	/^local function get_alt_or_next_buf()$/;"	f
+get_comparator	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/sorters.lua	/^local function get_comparator(sorter)$/;"	f
+get_containing_folder	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/fs/create-file.lua	/^local function get_containing_folder(node)$/;"	f
+get_ctags_executable	neovim/plugged/vim-gutentags/autoload/gutentags/ctags.vim	/^function! s:get_ctags_executable(proj_dir) abort$/;"	f
+get_dir_git_status	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/node.lua	/^local function get_dir_git_status(parent_ignored, status, absolute_path)$/;"	f
+get_file_icon_default	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/components/icons.lua	/^local function get_file_icon_default()$/;"	f
+get_file_icon_webdev	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/components/icons.lua	/^local function get_file_icon_webdev(fname, extension)$/;"	f
+get_folder_icon_default	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/components/icons.lua	/^local function get_folder_icon_default(node, has_children)$/;"	f
+get_folder_icon_webdev	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/components/icons.lua	/^local function get_folder_icon_webdev(node, has_children)$/;"	f
+get_formatted_lines	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/node/file-popup.lua	/^local function get_formatted_lines(node)$/;"	f
+get_git_status	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/node.lua	/^local function get_git_status(parent_ignored, status, absolute_path)$/;"	f
+get_handlers	neovim/plugged/nvim-tree.lua/lua/nvim-tree/events.lua	/^local function get_handlers(event_name)$/;"	f
+get_highlight_ctermfg	neovim/plugged/nvim-web-devicons/lua/nvim-web-devicons.lua	/^local function get_highlight_ctermfg(icon_data)$/;"	f
+get_highlight_foreground	neovim/plugged/nvim-web-devicons/lua/nvim-web-devicons.lua	/^local function get_highlight_foreground(icon_data)$/;"	f
+get_highlight_name	neovim/plugged/nvim-web-devicons/lua/nvim-web-devicons.lua	/^local function get_highlight_name(data)$/;"	f
+get_icon_by_extension	neovim/plugged/nvim-web-devicons/lua/nvim-web-devicons.lua	/^local function get_icon_by_extension(name, ext, opts)$/;"	f
+get_icon_names	neovim/plugged/nvim-web-devicons/scripts/filetype-generator.sh	/^function get_icon_names() {$/;"	f
+get_nearest	neovim/plugged/nvim-tree.lua/lua/nvim-tree/marks/navigation.lua	/^local function get_nearest(node, where)$/;"	f
+get_node	neovim/plugged/nvim-treehopper/lua/tsht.lua	/^local function get_node(opts)$/;"	f
+get_node_path	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/node/run-command.lua	/^local function get_node_path(node)$/;"	f
+get_nodes	neovim/plugged/nvim-treehopper/lua/tsht.lua	/^local function get_nodes(opts)$/;"	f
+get_num_nodes	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/fs/create-file.lua	/^local function get_num_nodes(iter)$/;"	f
+get_num_nodes	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/fs/rename-file.lua	/^local function get_num_nodes(iter)$/;"	f
+get_padding_indent_markers	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/components/padding.lua	/^local function get_padding_indent_markers(depth, idx, nodes_number, markers, with_arrows, inline_arrows, node)$/;"	f
+get_parser	neovim/plugged/nvim-treehopper/lua/tsht.lua	/^local function get_parser(bufnr)$/;"	f
+get_size	neovim/plugged/nvim-tree.lua/lua/nvim-tree/view.lua	/^local function get_size(size)$/;"	f
+get_target_winid	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/node/open-file.lua	/^local function get_target_winid(mode)$/;"	f
+get_user_input_char	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/node/open-file.lua	/^local function get_user_input_char()$/;"	f
+get_width	neovim/plugged/nvim-tree.lua/lua/nvim-tree/view.lua	/^local function get_width(size)$/;"	f
+git	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/filters.lua	/^local function git(path, git_status)$/;"	f
+group_empty 	neovim/plugged/nvim-tree.lua/lua/nvim-tree.lua	/^    group_empty = { "boolean", "function" },$/;"	f
+grow	neovim/plugged/nvim-tree.lua/lua/nvim-tree/view.lua	/^local function grow()$/;"	f
+gutentags#add_job	neovim/plugged/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#add_job(module, tags_file, data) abort$/;"	f
+gutentags#build_default_job_options	neovim/plugged/vim-gutentags/autoload/gutentags.vim	/^    function! gutentags#build_default_job_options(module) abort$/;"	f
+gutentags#chdir	neovim/plugged/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#chdir(path)$/;"	f
+gutentags#cscope#generate	neovim/plugged/vim-gutentags/autoload/gutentags/cscope.vim	/^function! gutentags#cscope#generate(proj_dir, tags_file, gen_opts) abort$/;"	f
+gutentags#cscope#init	neovim/plugged/vim-gutentags/autoload/gutentags/cscope.vim	/^function! gutentags#cscope#init(project_root) abort$/;"	f
+gutentags#cscope#on_job_exit	neovim/plugged/vim-gutentags/autoload/gutentags/cscope.vim	/^function! gutentags#cscope#on_job_exit(job, exit_val) abort$/;"	f
+gutentags#cscope_maps#generate	neovim/plugged/vim-gutentags/autoload/gutentags/cscope_maps.vim	/^function! gutentags#cscope_maps#generate(proj_dir, tags_file, gen_opts) abort$/;"	f
+gutentags#cscope_maps#init	neovim/plugged/vim-gutentags/autoload/gutentags/cscope_maps.vim	/^function! gutentags#cscope_maps#init(project_root) abort$/;"	f
+gutentags#cscope_maps#on_job_exit	neovim/plugged/vim-gutentags/autoload/gutentags/cscope_maps.vim	/^function! gutentags#cscope_maps#on_job_exit(job, exit_val) abort$/;"	f
+gutentags#ctags#generate	neovim/plugged/vim-gutentags/autoload/gutentags/ctags.vim	/^function! gutentags#ctags#generate(proj_dir, tags_file, gen_opts) abort$/;"	f
+gutentags#ctags#init	neovim/plugged/vim-gutentags/autoload/gutentags/ctags.vim	/^function! gutentags#ctags#init(project_root) abort$/;"	f
+gutentags#ctags#on_job_exit	neovim/plugged/vim-gutentags/autoload/gutentags/ctags.vim	/^function! gutentags#ctags#on_job_exit(job, exit_val) abort$/;"	f
+gutentags#default_get_project_root	neovim/plugged/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#default_get_project_root(path) abort$/;"	f
+gutentags#default_stderr_cb	neovim/plugged/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#default_stderr_cb(chan, msg) abort$/;"	f
+gutentags#default_stdout_cb	neovim/plugged/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#default_stdout_cb(chan, msg) abort$/;"	f
+gutentags#error	neovim/plugged/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#error(message)$/;"	f
+gutentags#fake	neovim/plugged/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#fake(...)$/;"	f
+gutentags#find_job_index_by_data	neovim/plugged/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#find_job_index_by_data(module, data) abort$/;"	f
+gutentags#find_job_index_by_tags_file	neovim/plugged/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#find_job_index_by_tags_file(module, tags_file) abort$/;"	f
+gutentags#get_cachefile	neovim/plugged/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#get_cachefile(root_dir, filename) abort$/;"	f
+gutentags#get_job_data	neovim/plugged/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#get_job_data(module, job_idx) abort$/;"	f
+gutentags#get_job_tags_file	neovim/plugged/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#get_job_tags_file(module, job_idx) abort$/;"	f
+gutentags#get_plat_file	neovim/plugged/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#get_plat_file(filename) abort$/;"	f
+gutentags#get_project_file_list_cmd	neovim/plugged/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#get_project_file_list_cmd(path) abort$/;"	f
+gutentags#get_project_info	neovim/plugged/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#get_project_info(path) abort$/;"	f
+gutentags#get_project_root	neovim/plugged/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#get_project_root(path) abort$/;"	f
+gutentags#get_res_file	neovim/plugged/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#get_res_file(filename) abort$/;"	f
+gutentags#gtags_cscope#generate	neovim/plugged/vim-gutentags/autoload/gutentags/gtags_cscope.vim	/^function! gutentags#gtags_cscope#generate(proj_dir, tags_file, gen_opts) abort$/;"	f
+gutentags#gtags_cscope#init	neovim/plugged/vim-gutentags/autoload/gutentags/gtags_cscope.vim	/^function! gutentags#gtags_cscope#init(project_root) abort$/;"	f
+gutentags#gtags_cscope#on_job_exit	neovim/plugged/vim-gutentags/autoload/gutentags/gtags_cscope.vim	/^function! gutentags#gtags_cscope#on_job_exit(job, exit_val) abort$/;"	f
+gutentags#inprogress	neovim/plugged/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#inprogress()$/;"	f
+gutentags#is_path_rooted	neovim/plugged/vim-gutentags/autoload/gutentags.vim	/^    function! gutentags#is_path_rooted(path) abort$/;"	f
+gutentags#make_args	neovim/plugged/vim-gutentags/autoload/gutentags.vim	/^    function! gutentags#make_args(cmd) abort$/;"	f
+gutentags#normalizepath	neovim/plugged/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#normalizepath(path)$/;"	f
+gutentags#on_vim_leave	neovim/plugged/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#on_vim_leave() abort$/;"	f
+gutentags#on_vim_leave_pre	neovim/plugged/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#on_vim_leave_pre() abort$/;"	f
+gutentags#pycscope#generate	neovim/plugged/vim-gutentags/autoload/gutentags/pycscope.vim	/^function! gutentags#pycscope#generate(proj_dir, tags_file, gen_opts) abort$/;"	f
+gutentags#pycscope#init	neovim/plugged/vim-gutentags/autoload/gutentags/pycscope.vim	/^function! gutentags#pycscope#init(project_root) abort$/;"	f
+gutentags#pycscope#on_job_exit	neovim/plugged/vim-gutentags/autoload/gutentags/pycscope.vim	/^function! gutentags#pycscope#on_job_exit(job, exit_val) abort$/;"	f
+gutentags#remove_job	neovim/plugged/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#remove_job(module, job_idx) abort$/;"	f
+gutentags#remove_job_by_data	neovim/plugged/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#remove_job_by_data(module, data) abort$/;"	f
+gutentags#rescan	neovim/plugged/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#rescan(...)$/;"	f
+gutentags#setup_gutentags	neovim/plugged/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#setup_gutentags() abort$/;"	f
+gutentags#shellslash	neovim/plugged/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#shellslash(path)$/;"	f
+gutentags#start_job	neovim/plugged/vim-gutentags/autoload/gutentags.vim	/^    function! gutentags#start_job(cmd, opts) abort$/;"	f
+gutentags#statusline	neovim/plugged/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#statusline(...) abort$/;"	f
+gutentags#statusline_cb	neovim/plugged/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#statusline_cb(fmt_cb, ...) abort$/;"	f
+gutentags#stripslash	neovim/plugged/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#stripslash(path)$/;"	f
+gutentags#throw	neovim/plugged/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#throw(message)$/;"	f
+gutentags#toggletrace	neovim/plugged/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#toggletrace(...)$/;"	f
+gutentags#trace	neovim/plugged/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#trace(message, ...)$/;"	f
+gutentags#validate_cmd	neovim/plugged/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#validate_cmd(cmd) abort$/;"	f
+gutentags#warning	neovim/plugged/vim-gutentags/autoload/gutentags.vim	/^function! gutentags#warning(message)$/;"	f
+gutentags_detect	neovim/plugged/vim-gutentags/plugin/gutentags.vim	/^augroup gutentags_detect$/;"	a
+handle_buf_cwd	neovim/plugged/nvim-tree.lua/lua/nvim-tree/lib.lua	/^local function handle_buf_cwd(cwd)$/;"	f
+handle_coc_exception	neovim/plugged/nvim-tree.lua/lua/nvim-tree/diagnostics.lua	/^local function handle_coc_exception(err)$/;"	f
+hide	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/components/full-name.lua	/^local function hide(win)$/;"	f
+highlight_exists	neovim/plugged/nvim-web-devicons/lua/nvim-web-devicons.lua	/^local function highlight_exists(group)$/;"	f
+hsluv.dot_product 	neovim/plugged/kanagawa.nvim/lua/kanagawa/lib/hsluv.lua	/^hsluv.dot_product = function(a, b)$/;"	f
+hsluv.from_linear 	neovim/plugged/kanagawa.nvim/lua/kanagawa/lib/hsluv.lua	/^hsluv.from_linear = function(c)$/;"	f
+hsluv.get_bounds 	neovim/plugged/kanagawa.nvim/lua/kanagawa/lib/hsluv.lua	/^hsluv.get_bounds = function(l)$/;"	f
+hsluv.hex_to_hpluv 	neovim/plugged/kanagawa.nvim/lua/kanagawa/lib/hsluv.lua	/^hsluv.hex_to_hpluv = function(s)$/;"	f
+hsluv.hex_to_hsluv 	neovim/plugged/kanagawa.nvim/lua/kanagawa/lib/hsluv.lua	/^hsluv.hex_to_hsluv = function(s)$/;"	f
+hsluv.hex_to_rgb 	neovim/plugged/kanagawa.nvim/lua/kanagawa/lib/hsluv.lua	/^hsluv.hex_to_rgb = function(hex)$/;"	f
+hsluv.hpluv_to_hex 	neovim/plugged/kanagawa.nvim/lua/kanagawa/lib/hsluv.lua	/^hsluv.hpluv_to_hex = function(tuple)$/;"	f
+hsluv.hpluv_to_lch 	neovim/plugged/kanagawa.nvim/lua/kanagawa/lib/hsluv.lua	/^hsluv.hpluv_to_lch = function(tuple)$/;"	f
+hsluv.hpluv_to_rgb 	neovim/plugged/kanagawa.nvim/lua/kanagawa/lib/hsluv.lua	/^hsluv.hpluv_to_rgb = function(tuple)$/;"	f
+hsluv.hsluv_to_hex 	neovim/plugged/kanagawa.nvim/lua/kanagawa/lib/hsluv.lua	/^hsluv.hsluv_to_hex = function(tuple)$/;"	f
+hsluv.hsluv_to_lch 	neovim/plugged/kanagawa.nvim/lua/kanagawa/lib/hsluv.lua	/^hsluv.hsluv_to_lch = function(tuple)$/;"	f
+hsluv.hsluv_to_rgb 	neovim/plugged/kanagawa.nvim/lua/kanagawa/lib/hsluv.lua	/^hsluv.hsluv_to_rgb = function(tuple)$/;"	f
+hsluv.l_to_y 	neovim/plugged/kanagawa.nvim/lua/kanagawa/lib/hsluv.lua	/^hsluv.l_to_y = function(L)$/;"	f
+hsluv.lch_to_hpluv 	neovim/plugged/kanagawa.nvim/lua/kanagawa/lib/hsluv.lua	/^hsluv.lch_to_hpluv = function(tuple)$/;"	f
+hsluv.lch_to_hsluv 	neovim/plugged/kanagawa.nvim/lua/kanagawa/lib/hsluv.lua	/^hsluv.lch_to_hsluv = function(tuple)$/;"	f
+hsluv.lch_to_luv 	neovim/plugged/kanagawa.nvim/lua/kanagawa/lib/hsluv.lua	/^hsluv.lch_to_luv = function(tuple)$/;"	f
+hsluv.lch_to_rgb 	neovim/plugged/kanagawa.nvim/lua/kanagawa/lib/hsluv.lua	/^hsluv.lch_to_rgb = function(tuple)$/;"	f
+hsluv.luv_to_lch 	neovim/plugged/kanagawa.nvim/lua/kanagawa/lib/hsluv.lua	/^hsluv.luv_to_lch = function(tuple)$/;"	f
+hsluv.luv_to_xyz 	neovim/plugged/kanagawa.nvim/lua/kanagawa/lib/hsluv.lua	/^hsluv.luv_to_xyz = function(tuple)$/;"	f
+hsluv.max_safe_chroma_for_l 	neovim/plugged/kanagawa.nvim/lua/kanagawa/lib/hsluv.lua	/^hsluv.max_safe_chroma_for_l = function(l)$/;"	f
+hsluv.max_safe_chroma_for_lh 	neovim/plugged/kanagawa.nvim/lua/kanagawa/lib/hsluv.lua	/^hsluv.max_safe_chroma_for_lh = function(l, h)$/;"	f
+hsluv.rgb_to_hex 	neovim/plugged/kanagawa.nvim/lua/kanagawa/lib/hsluv.lua	/^hsluv.rgb_to_hex = function(tuple)$/;"	f
+hsluv.rgb_to_hpluv 	neovim/plugged/kanagawa.nvim/lua/kanagawa/lib/hsluv.lua	/^hsluv.rgb_to_hpluv = function(tuple)$/;"	f
+hsluv.rgb_to_hsluv 	neovim/plugged/kanagawa.nvim/lua/kanagawa/lib/hsluv.lua	/^hsluv.rgb_to_hsluv = function(tuple)$/;"	f
+hsluv.rgb_to_lch 	neovim/plugged/kanagawa.nvim/lua/kanagawa/lib/hsluv.lua	/^hsluv.rgb_to_lch = function(tuple)$/;"	f
+hsluv.rgb_to_xyz 	neovim/plugged/kanagawa.nvim/lua/kanagawa/lib/hsluv.lua	/^hsluv.rgb_to_xyz = function(tuple)$/;"	f
+hsluv.to_linear 	neovim/plugged/kanagawa.nvim/lua/kanagawa/lib/hsluv.lua	/^hsluv.to_linear = function(c)$/;"	f
+hsluv.xyz_to_luv 	neovim/plugged/kanagawa.nvim/lua/kanagawa/lib/hsluv.lua	/^hsluv.xyz_to_luv = function(tuple)$/;"	f
+hsluv.xyz_to_rgb 	neovim/plugged/kanagawa.nvim/lua/kanagawa/lib/hsluv.lua	/^hsluv.xyz_to_rgb = function(tuple)$/;"	f
+hsluv.y_to_l 	neovim/plugged/kanagawa.nvim/lua/kanagawa/lib/hsluv.lua	/^hsluv.y_to_l = function(Y)$/;"	f
+if fs_event:start(path, FS_EVENT_FLAGS, function() end) ~	neovim/plugged/nvim-tree.lua/lua/nvim-tree/watcher.lua	/^  if fs_event:start(path, FS_EVENT_FLAGS, function() end) ~= 0 then$/;"	f
+if node.group_next and type(M.opts.renderer.group_empty) 	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/builder.lua	/^  if node.group_next and type(M.opts.renderer.group_empty) == "function" then$/;"	f
+if type(M.View.float.open_win_config) 	neovim/plugged/nvim-tree.lua/lua/nvim-tree/view.lua	/^  if type(M.View.float.open_win_config) == "function" then$/;"	f
+if type(M.config.sort.sorter) 	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/sorters.lua	/^  if type(M.config.sort.sorter) == "function" then$/;"	f
+if type(M.window_picker.picker) 	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/node/open-file.lua	/^    if type(M.window_picker.picker) == "function" then$/;"	f
+if type(custom_filter) 	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/filters.lua	/^  if type(custom_filter) == "function" then$/;"	f
+if type(exclude) 	neovim/plugged/nvim-tree.lua/lua/nvim-tree.lua	/^        if type(exclude) == "function" and exclude(event) then$/;"	f
+if type(opts.on_attach) ~	neovim/plugged/nvim-tree.lua/lua/nvim-tree/keymap.lua	/^  if type(opts.on_attach) ~= "function" then$/;"	f
+if type(root_label) 	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/builder.lua	/^  if type(root_label) == "function" then$/;"	f
+insert_parent_ranges	neovim/plugged/nvim-treehopper/lua/tsht.lua	/^local function insert_parent_ranges(ranges, node)$/;"	f
+io	neovim/plugged/kanagawa.nvim/palette.py	/^from skimage import color, io$/;"	i
+is_already_loaded	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/node/open-file.lua	/^local function is_already_loaded(filename)$/;"	f
+is_buf_displayed	neovim/plugged/nvim-tree.lua/lua/nvim-tree/view.lua	/^local function is_buf_displayed(buf)$/;"	f
+is_done	neovim/plugged/nvim-tree.lua/lua/nvim-tree/git/runner.lua	/^  local function is_done()$/;"	f
+is_excluded	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/filters.lua	/^local function is_excluded(path)$/;"	f
+is_folder_ignored	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/watch.lua	/^local function is_folder_ignored(path)$/;"	f
+is_git	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/watch.lua	/^local function is_git(path)$/;"	f
+is_severity_in_range	neovim/plugged/nvim-tree.lua/lua/nvim-tree/diagnostics.lua	/^local function is_severity_in_range(severity, config)$/;"	f
+is_using_coc	neovim/plugged/nvim-tree.lua/lua/nvim-tree/diagnostics.lua	/^local function is_using_coc()$/;"	f
+is_window_event	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/root/change-dir.lua	/^local function is_window_event(new_tabpage)$/;"	f
+iter	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/finders/search-node.lua	/^  local function iter(dir)$/;"	f
+iter	neovim/plugged/nvim-tree.lua/lua/nvim-tree/iterators/node-iterator.lua	/^  local function iter(nodes)$/;"	f
+iterate	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/init.lua	/^  local function iterate(node)$/;"	f
+iterate	neovim/plugged/nvim-tree.lua/lua/nvim-tree/live-filter.lua	/^  local function iterate(node)$/;"	f
+iterate_multi_dotted_extension	neovim/plugged/nvim-web-devicons/lua/nvim-web-devicons.lua	/^local function iterate_multi_dotted_extension(name, icon_table)$/;"	f
+keys_iter	neovim/plugged/nvim-treehopper/lua/tsht.lua	/^local function keys_iter()$/;"	f
+load_plugins	neovim/plugged/nvim-tree.lua/.github/ISSUE_TEMPLATE/nvt-min.lua	/^local function load_plugins()$/;"	f
+local _, i 	neovim/plugged/nvim-tree.lua/lua/nvim-tree/utils.lua	/^  local _, i = M.find_node(require("nvim-tree.core").get_explorer().nodes, function(node)$/;"	f
+local _, line 	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/moves/parent.lua	/^    local _, line = utils.find_node(core.get_explorer().nodes, function(n)$/;"	f
+local buffer_paths 	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/tree/modifiers/collapse-all.lua	/^  local buffer_paths = vim.tbl_map(function(buffer)$/;"	f
+local callback 	neovim/plugged/nvim-tree.lua/lua/nvim-tree/git/init.lua	/^    local callback = function(w)$/;"	f
+local dispatch 	neovim/plugged/nvim-tree.lua/lua/nvim-tree/notify.lua	/^  local dispatch = function(level, msg)$/;"	f
+local distance_line_from_origin 	neovim/plugged/kanagawa.nvim/lua/kanagawa/lib/hsluv.lua	/^local distance_line_from_origin = function(line)$/;"	f
+local event_cb 	neovim/plugged/nvim-tree.lua/lua/nvim-tree/watcher.lua	/^  local event_cb = vim.schedule_wrap(function(err, filename)$/;"	f
+local found_node, i 	neovim/plugged/nvim-tree.lua/lua/nvim-tree/utils.lua	/^    local found_node, i = M.find_node(explorer.nodes, function(node_)$/;"	f
+local gen 	neovim/plugged/nvim-treehopper/lua/tsht.lua	/^  local gen = function()$/;"	f
+local get_compiled_path 	neovim/plugged/kanagawa.nvim/lua/kanagawa/utils.lua	/^local get_compiled_path = function(theme)$/;"	f
+local has_lang, lang 	neovim/plugged/nvim-treehopper/lua/tsht.lua	/^  local has_lang, lang = pcall(function()$/;"	f
+local length_of_ray_until_intersect 	neovim/plugged/kanagawa.nvim/lua/kanagawa/lib/hsluv.lua	/^local length_of_ray_until_intersect = function(theta, line)$/;"	f
+local list 	neovim/plugged/nvim-tree.lua/lua/nvim-tree/marks/navigation.lua	/^  local list = vim.tbl_map(function(n)$/;"	f
+local mappings 	neovim/plugged/nvim-tree.lua/lua/nvim-tree/help.lua	/^  local mappings = vim.tbl_map(function(map)$/;"	f
+local max_width 	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/node/file-popup.lua	/^  local max_width = vim.fn.max(vim.tbl_map(function(n)$/;"	f
+local mini_comparator 	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/sorters.lua	/^    local mini_comparator = function(a, b)$/;"	f
+local not_selectable 	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/node/open-file.lua	/^  local not_selectable = vim.tbl_filter(function(id)$/;"	f
+local ok, diagnostic_list 	neovim/plugged/nvim-tree.lua/lua/nvim-tree/diagnostics.lua	/^  local ok, diagnostic_list = xpcall(function()$/;"	f
+local run 	neovim/plugged/nvim-treehopper/lua/tsht.lua	/^  local run = coroutine.wrap(function()$/;"	f
+local win_ids 	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/node/open-file.lua	/^  local win_ids = vim.tbl_filter(function(id)$/;"	f
+localise_default_opts	neovim/plugged/nvim-tree.lua/lua/nvim-tree.lua	/^local function localise_default_opts()$/;"	f
+lotus 	neovim/plugged/kanagawa.nvim/lua/kanagawa/themes.lua	/^    lotus = function(palette)$/;"	f
+lsp_selection_ranges	neovim/plugged/nvim-treehopper/lua/tsht.lua	/^local function lsp_selection_ranges()$/;"	f
+main	neovim/plugged/kanagawa.nvim/palette.py	/^def main():$/;"	f
+main	neovim/plugged/nvim-web-devicons/scripts/filetype-generator.sh	/^function main() {$/;"	f
+manage_netrw	neovim/plugged/nvim-tree.lua/lua/nvim-tree.lua	/^local function manage_netrw(disable_netrw, hijack_netrw)$/;"	f
+manage_stderr	neovim/plugged/nvim-tree.lua/lua/nvim-tree/git/runner.lua	/^  local function manage_stderr(_, data)$/;"	f
+manage_stdout	neovim/plugged/nvim-tree.lua/lua/nvim-tree/git/runner.lua	/^  local function manage_stdout(err, data)$/;"	f
+manual_update_tags	neovim/plugged/vim-gutentags/autoload/gutentags.vim	/^function! s:manual_update_tags(bang) abort$/;"	f
+matches	neovim/plugged/nvim-tree.lua/lua/nvim-tree/live-filter.lua	/^local function matches(node)$/;"	f
+matches_bufnr	neovim/plugged/nvim-tree.lua/lua/nvim-tree/view.lua	/^local function matches_bufnr(bufnr)$/;"	f
+matplotlib	neovim/plugged/kanagawa.nvim/palette.py	/^import matplotlib.pyplot as plt$/;"	i
+max 	neovim/plugged/nvim-tree.lua/lua/nvim-tree.lua	/^      max = { "string", "function", "number" },$/;"	f
+merge	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/sorters.lua	/^local function merge(t, first, mid, last, comparator)$/;"	f
+merge_options	neovim/plugged/nvim-tree.lua/lua/nvim-tree.lua	/^local function merge_options(conf)$/;"	f
+min 	neovim/plugged/nvim-tree.lua/lua/nvim-tree.lua	/^      min = { "string", "function", "number" },$/;"	f
+move	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/moves/item.lua	/^local function move(where, what, skip_gitignored)$/;"	f
+move	neovim/plugged/nvim-treehopper/lua/tsht.lua	/^local function move(opts)$/;"	f
+move_next_recursive	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/moves/item.lua	/^local function move_next_recursive(what, skip_gitignored)$/;"	f
+move_prev_recursive	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/moves/item.lua	/^local function move_prev_recursive(what, skip_gitignored)$/;"	f
+navigate_to	neovim/plugged/nvim-tree.lua/lua/nvim-tree/marks/navigation.lua	/^local function navigate_to(where)$/;"	f
+nil_insert	neovim/plugged/nvim-tree.lua/lua/nvim-tree/git/utils.lua	/^local function nil_insert(t, k)$/;"	f
+node_comparator_name_ignorecase_or_not	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/sorters.lua	/^local function node_comparator_name_ignorecase_or_not(a, b, ignorecase)$/;"	f
+node_end	neovim/plugged/nvim-treehopper/lua/tsht.lua	/^local function node_end(node)$/;"	f
+node_start	neovim/plugged/nvim-treehopper/lua/tsht.lua	/^local function node_start(node)$/;"	f
+none_to_hex	neovim/plugged/kanagawa.nvim/lua/kanagawa/lib/color.lua	/^local function none_to_hex()$/;"	f
+np	neovim/plugged/kanagawa.nvim/palette.py	/^import numpy as np$/;"	i
+nvim_job_exit_wrapper	neovim/plugged/vim-gutentags/autoload/gutentags.vim	/^    function! s:nvim_job_exit_wrapper(real_cb, job, exit_code, event_type) abort$/;"	f
+nvim_job_out_wrapper	neovim/plugged/vim-gutentags/autoload/gutentags.vim	/^    function! s:nvim_job_out_wrapper(real_cb, job, lines, event_type) abort$/;"	f
+on_attach 	neovim/plugged/nvim-tree.lua/lua/nvim-tree.lua	/^  on_attach = { "function", "string" },$/;"	f
+on_finish	neovim/plugged/nvim-tree.lua/lua/nvim-tree/git/runner.lua	/^  local function on_finish(rc)$/;"	f
+on_preview	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/node/open-file.lua	/^local function on_preview(buf_loaded)$/;"	f
+on_process	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/fs/copy-paste.lua	/^  local function on_process()$/;"	f
+on_stderr	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/fs/trash.lua	/^  local function on_stderr(_, data)$/;"	f
+open	neovim/plugged/nvim-tree.lua/lua/nvim-tree/help.lua	/^local function open()$/;"	f
+open_file_in_tab	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/node/open-file.lua	/^local function open_file_in_tab(filename)$/;"	f
+open_in_new_window	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/node/open-file.lua	/^local function open_in_new_window(filename, mode)$/;"	f
+open_or_expand_or_dir_up	neovim/plugged/nvim-tree.lua/lua/nvim-tree/api.lua	/^local function open_or_expand_or_dir_up(mode, toggle_group)$/;"	f
+open_or_focus	neovim/plugged/nvim-tree.lua/lua/nvim-tree/marks/navigation.lua	/^local function open_or_focus(node)$/;"	f
+open_view_and_draw	neovim/plugged/nvim-tree.lua/lua/nvim-tree/lib.lua	/^local function open_view_and_draw()$/;"	f
+open_win_config	neovim/plugged/nvim-tree.lua/lua/nvim-tree/view.lua	/^local function open_win_config()$/;"	f
+open_window	neovim/plugged/nvim-tree.lua/lua/nvim-tree/view.lua	/^local function open_window()$/;"	f
+opts	neovim/plugged/nvim-tree.lua/lua/nvim-tree/keymap.lua	/^  local function opts(desc)$/;"	f
+overrides 	neovim/plugged/kanagawa.nvim/lua/kanagawa/init.lua	/^    overrides = function()$/;"	f
+p2h	neovim/plugged/kanagawa.nvim/palette.py	/^def p2h(p):$/;"	f
+padding 	neovim/plugged/nvim-tree.lua/lua/nvim-tree.lua	/^      padding = { "function", "number" },$/;"	f
+palette	neovim/plugged/kanagawa.nvim/palette.py	/^def palette(img, n=10, r=1, o=False):$/;"	f
+path_ignored_in_project	neovim/plugged/nvim-tree.lua/lua/nvim-tree/git/init.lua	/^local function path_ignored_in_project(path, project)$/;"	f
+pick_win_id	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/node/open-file.lua	/^local function pick_win_id()$/;"	f
+picker 	neovim/plugged/nvim-tree.lua/lua/nvim-tree.lua	/^        picker = { "function", "string" },$/;"	f
+plt	neovim/plugged/kanagawa.nvim/palette.py	/^import matplotlib.pyplot as plt$/;"	i
+populate_children	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/explore.lua	/^local function populate_children(handle, cwd, node, git_status)$/;"	f
+prevent_cwd_change	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/root/change-dir.lua	/^local function prevent_cwd_change(foldername)$/;"	f
+process.handle, process.pid 	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/node/system-open.lua	/^  process.handle, process.pid = vim.loop.spawn(process.cmd, opts, function(code)$/;"	f
+process_options_file	neovim/plugged/vim-gutentags/autoload/gutentags/ctags.vim	/^function! s:process_options_file(proj_dir, path) abort$/;"	f
+record_char	neovim/plugged/nvim-tree.lua/lua/nvim-tree/live-filter.lua	/^local function record_char()$/;"	f
+redraw	neovim/plugged/nvim-tree.lua/lua/nvim-tree/live-filter.lua	/^local function redraw()$/;"	f
+refactored	neovim/plugged/nvim-tree.lua/lua/nvim-tree/legacy.lua	/^local function refactored(opts)$/;"	f
+refresh_icons	neovim/plugged/nvim-web-devicons/lua/nvim-web-devicons.lua	/^local function refresh_icons()$/;"	f
+refresh_nodes	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/reloaders.lua	/^local function refresh_nodes(node, projects)$/;"	f
+region	neovim/plugged/nvim-treehopper/lua/tsht.lua	/^local function region(opts)$/;"	f
+reload	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/tree/modifiers/toggles.lua	/^local function reload()$/;"	f
+reload_and_get_git_project	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/reload.lua	/^local function reload_and_get_git_project(path, callback)$/;"	f
+reload_git_status	neovim/plugged/nvim-tree.lua/lua/nvim-tree/git/init.lua	/^local function reload_git_status(toplevel, path, project, git_status)$/;"	f
+reload_tree_at	neovim/plugged/nvim-tree.lua/lua/nvim-tree/git/init.lua	/^local function reload_tree_at(toplevel)$/;"	f
+remove_dir	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/fs/remove-file.lua	/^local function remove_dir(cwd)$/;"	f
+remove_mark	neovim/plugged/nvim-tree.lua/lua/nvim-tree/marks/init.lua	/^local function remove_mark(node)$/;"	f
+remove_overlay	neovim/plugged/nvim-tree.lua/lua/nvim-tree/live-filter.lua	/^local function remove_overlay()$/;"	f
+removed	neovim/plugged/nvim-tree.lua/lua/nvim-tree/legacy.lua	/^local function removed(opts)$/;"	f
+render_displays	neovim/plugged/nvim-tree.lua/lua/nvim-tree/appearance/diagnostics.lua	/^local function render_displays(header, displays, bufnr, l)$/;"	f
+render_icons	neovim/plugged/nvim-web-devicons/lua/nvim-web-devicons/hi-test.lua	/^local function render_icons(bufnr, l, icons, header)$/;"	f
+render_line	neovim/plugged/nvim-web-devicons/lua/nvim-web-devicons/hi-test.lua	/^local function render_line(bufnr, l, text)$/;"	f
+rescale	neovim/plugged/kanagawa.nvim/palette.py	/^from skimage.transform import rescale$/;"	i
+reset_filter	neovim/plugged/nvim-tree.lua/lua/nvim-tree/live-filter.lua	/^local function reset_filter(node_)$/;"	f
+root_folder_label 	neovim/plugged/nvim-tree.lua/lua/nvim-tree.lua	/^    root_folder_label = { "function", "string", "boolean" },$/;"	f
+round	neovim/plugged/nvim-tree.lua/lua/nvim-tree/utils.lua	/^local function round(value)$/;"	f
+s:added_db_files	neovim/plugged/vim-gutentags/autoload/gutentags/gtags_cscope.vim	/^let s:added_db_files = {}$/;"	v
+s:added_dbs	neovim/plugged/vim-gutentags/autoload/gutentags/cscope.vim	/^let s:added_dbs = []$/;"	v
+s:added_dbs	neovim/plugged/vim-gutentags/autoload/gutentags/cscope_maps.vim	/^let s:added_dbs = []$/;"	v
+s:added_dbs	neovim/plugged/vim-gutentags/autoload/gutentags/pycscope.vim	/^let s:added_dbs = []$/;"	v
+s:did_check_exe	neovim/plugged/vim-gutentags/autoload/gutentags/ctags.vim	/^let s:did_check_exe = 0$/;"	v
+s:known_files	neovim/plugged/vim-gutentags/autoload/gutentags.vim	/^let s:known_files = []$/;"	v
+s:known_projects	neovim/plugged/vim-gutentags/autoload/gutentags.vim	/^let s:known_projects = {}$/;"	v
+s:last_wildignores	neovim/plugged/vim-gutentags/autoload/gutentags/ctags.vim	/^let s:last_wildignores = ''$/;"	v
+s:runner_exe	neovim/plugged/vim-gutentags/autoload/gutentags/cscope.vim	/^let s:runner_exe = gutentags#get_plat_file('update_scopedb')$/;"	v
+s:runner_exe	neovim/plugged/vim-gutentags/autoload/gutentags/cscope_maps.vim	/^let s:runner_exe = gutentags#get_plat_file('update_scopedb')$/;"	v
+s:runner_exe	neovim/plugged/vim-gutentags/autoload/gutentags/ctags.vim	/^let s:runner_exe = '"' . gutentags#get_plat_file('update_tags') . '"'$/;"	v
+s:runner_exe	neovim/plugged/vim-gutentags/autoload/gutentags/gtags_cscope.vim	/^let s:runner_exe = gutentags#get_plat_file('update_gtags')$/;"	v
+s:runner_exe	neovim/plugged/vim-gutentags/autoload/gutentags/pycscope.vim	/^let s:runner_exe = gutentags#get_plat_file('update_pyscopedb')$/;"	v
+s:save_cpo	neovim/plugged/nvim-web-devicons/plugin/nvim-web-devicons.vim	/^let s:save_cpo = &cpo$/;"	v
+s:unix_redir	neovim/plugged/vim-gutentags/autoload/gutentags/cscope.vim	/^let s:unix_redir = (&shellredir =~# '%s') ? &shellredir : &shellredir . ' %s'$/;"	v
+s:unix_redir	neovim/plugged/vim-gutentags/autoload/gutentags/cscope_maps.vim	/^let s:unix_redir = (&shellredir =~# '%s') ? &shellredir : &shellredir . ' %s'$/;"	v
+s:unix_redir	neovim/plugged/vim-gutentags/autoload/gutentags/ctags.vim	/^let s:unix_redir = (&shellredir =~# '%s') ? &shellredir : &shellredir . ' %s'$/;"	v
+s:unix_redir	neovim/plugged/vim-gutentags/autoload/gutentags/pycscope.vim	/^let s:unix_redir = (&shellredir =~# '%s') ? &shellredir : &shellredir . ' %s'$/;"	v
+s:update_in_progress	neovim/plugged/vim-gutentags/autoload/gutentags.vim	/^    let s:update_in_progress[module] = []$/;"	v
+s:update_in_progress	neovim/plugged/vim-gutentags/autoload/gutentags.vim	/^let s:update_in_progress = {}$/;"	v
+s:update_queue	neovim/plugged/vim-gutentags/autoload/gutentags.vim	/^    let s:update_queue[module] = []$/;"	v
+s:update_queue	neovim/plugged/vim-gutentags/autoload/gutentags.vim	/^let s:update_queue = {}$/;"	v
+s:wildignores_options_path	neovim/plugged/vim-gutentags/autoload/gutentags/ctags.vim	/^let s:wildignores_options_path = ''$/;"	v
+save_tab_state	neovim/plugged/nvim-tree.lua/lua/nvim-tree/view.lua	/^local function save_tab_state(tabnr)$/;"	f
+search	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/finders/search-node.lua	/^local function search(search_dir, input_path)$/;"	f
+self._filter_hidden 	neovim/plugged/nvim-tree.lua/lua/nvim-tree/iterators/node-iterator.lua	/^  self._filter_hidden = function(_)$/;"	f
+self._listener 	neovim/plugged/nvim-tree.lua/lua/nvim-tree/watcher.lua	/^  self._listener = function(filename)$/;"	f
+set_current_win	neovim/plugged/nvim-tree.lua/lua/nvim-tree/view.lua	/^local function set_current_win()$/;"	f
+set_current_win_no_autocmd	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/node/open-file.lua	/^local function set_current_win_no_autocmd(winid, autocmd)$/;"	f
+set_up_highlight	neovim/plugged/nvim-web-devicons/lua/nvim-web-devicons.lua	/^local function set_up_highlight(icon_data)$/;"	f
+set_window_options_and_buffer	neovim/plugged/nvim-tree.lua/lua/nvim-tree/view.lua	/^local function set_window_options_and_buffer()$/;"	f
+setup_autocommands	neovim/plugged/nvim-tree.lua/lua/nvim-tree.lua	/^local function setup_autocommands(opts)$/;"	f
+setup_highlights	neovim/plugged/nvim-treehopper/plugin/tsht.vim	/^function s:setup_highlights()$/;"	f
+setup_tabpage	neovim/plugged/nvim-tree.lua/lua/nvim-tree/view.lua	/^local function setup_tabpage(tabpage)$/;"	f
+setup_window	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/node/file-popup.lua	/^local function setup_window(node)$/;"	f
+should_change_dir	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/root/change-dir.lua	/^local function should_change_dir()$/;"	f
+should_expand	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/tree/modifiers/expand-all.lua	/^local function should_expand(expansion_count, node)$/;"	f
+should_hijack_current_buf	neovim/plugged/nvim-tree.lua/lua/nvim-tree/lib.lua	/^local function should_hijack_current_buf()$/;"	f
+show	neovim/plugged/nvim-tree.lua/lua/nvim-tree/renderer/components/full-name.lua	/^local function show()$/;"	f
+sort_fn 	neovim/plugged/nvim-tree.lua/lua/nvim-tree/help.lua	/^    sort_fn = function(a, b)$/;"	f
+sort_lhs	neovim/plugged/nvim-tree.lua/lua/nvim-tree/help.lua	/^local function sort_lhs(a, b)$/;"	f
+sorter 	neovim/plugged/nvim-tree.lua/lua/nvim-tree.lua	/^    sorter = { "function", "string" },$/;"	f
+split_merge	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/sorters.lua	/^local function split_merge(t, first, last, comparator)$/;"	f
+status_is_valid	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/moves/item.lua	/^local function status_is_valid(node, what, skip_gitignored)$/;"	f
+switch_buf_if_last_buf	neovim/plugged/nvim-tree.lua/lua/nvim-tree/view.lua	/^local function switch_buf_if_last_buf()$/;"	f
+tab_drop	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/node/open-file.lua	/^local function tab_drop(filename)$/;"	f
+tbl_slice	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/sorters.lua	/^local function tbl_slice(t, first, last)$/;"	f
+tidy_desc	neovim/plugged/nvim-tree.lua/lua/nvim-tree/help.lua	/^local function tidy_desc(desc)$/;"	f
+tidy_lhs	neovim/plugged/nvim-tree.lua/lua/nvim-tree/help.lua	/^local function tidy_lhs(lhs)$/;"	f
+timer_stop_close	neovim/plugged/nvim-tree.lua/lua/nvim-tree/utils.lua	/^local function timer_stop_close(timer)$/;"	f
+to_lookup_table	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/tree/modifiers/expand-all.lua	/^local function to_lookup_table(list)$/;"	f
+toggle	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/fs/copy-paste.lua	/^local function toggle(node, clip)$/;"	f
+toggle_group_folders	neovim/plugged/nvim-tree.lua/lua/nvim-tree/lib.lua	/^local function toggle_group_folders(head_node)$/;"	f
+toggle_sort	neovim/plugged/nvim-tree.lua/lua/nvim-tree/help.lua	/^  local function toggle_sort()$/;"	f
+trash_path	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/fs/trash.lua	/^  local function trash_path(on_exit)$/;"	f
+ts_parents_from_cursor	neovim/plugged/nvim-treehopper/lua/tsht.lua	/^local function ts_parents_from_cursor(opts)$/;"	f
+uniformize_path	neovim/plugged/nvim-tree.lua/lua/nvim-tree/diagnostics.lua	/^local function uniformize_path(path)$/;"	f
+update_cterm_colors	neovim/plugged/nvim-web-devicons/scripts/generate_colors.lua	/^local function update_cterm_colors()$/;"	f
+update_parent_statuses	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/reload.lua	/^local function update_parent_statuses(node, project, root)$/;"	f
+update_status	neovim/plugged/nvim-tree.lua/lua/nvim-tree/explorer/reload.lua	/^local function update_status(nodes_by_path, node_ignored, status)$/;"	f
+update_tags	neovim/plugged/vim-gutentags/autoload/gutentags.vim	/^function! s:update_tags(bufno, module, write_mode, queue_mode) abort$/;"	f
+usable_win_ids	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/node/open-file.lua	/^local function usable_win_ids()$/;"	f
+use_raw_list	neovim/plugged/vim-gutentags/plat/win32/update_tags.cmd	/^        if ["%FILE_LIST_CMD_IS_ABSOLUTE%"]==["1"] set use_raw_list=1$/;"	v
+use_raw_list	neovim/plugged/vim-gutentags/plat/win32/update_tags.cmd	/^        if ["%PROJECT_ROOT%"]==["."] set use_raw_list=1$/;"	v
+use_raw_list	neovim/plugged/vim-gutentags/plat/win32/update_tags.cmd	/^        set use_raw_list=0$/;"	v
+validate	neovim/plugged/nvim-tree.lua/lua/nvim-tree.lua	/^  local function validate(user, def, strs, types, prefix)$/;"	f
+validate_options	neovim/plugged/nvim-tree.lua/lua/nvim-tree.lua	/^local function validate_options(conf)$/;"	f
+vim.ui.input({ prompt 	neovim/plugged/nvim-tree.lua/lua/nvim-tree/actions/finders/search-node.lua	/^  vim.ui.input({ prompt = "Search: ", completion = "file_in_path" }, function(input_path)$/;"	f
+vim.ui.input({ prompt 	neovim/plugged/nvim-tree.lua/lua/nvim-tree/lib.lua	/^    vim.ui.input({ prompt = prompt_input, default = items_short[1] or "" }, function(item_short)$/;"	f
+vim.ui.select(items_short, { prompt 	neovim/plugged/nvim-tree.lua/lua/nvim-tree/lib.lua	/^    vim.ui.select(items_short, { prompt = prompt_select, kind = kind, format_item = format_item }, function(item_short)$/;"	f
+wave 	neovim/plugged/kanagawa.nvim/lua/kanagawa/themes.lua	/^    wave = function(palette)$/;"	f
+wipe_rogue_buffer	neovim/plugged/nvim-tree.lua/lua/nvim-tree/view.lua	/^local function wipe_rogue_buffer()$/;"	f
+wrap	neovim/plugged/nvim-tree.lua/lua/nvim-tree/api.lua	/^local function wrap(f)$/;"	f
+wrap_node	neovim/plugged/nvim-tree.lua/lua/nvim-tree/api.lua	/^local function wrap_node(fn)$/;"	f
+wrap_node_or_nil	neovim/plugged/nvim-tree.lua/lua/nvim-tree/api.lua	/^local function wrap_node_or_nil(fn)$/;"	f
+write_triggered_update_tags	neovim/plugged/vim-gutentags/autoload/gutentags.vim	/^function! s:write_triggered_update_tags(bufno) abort$/;"	f
