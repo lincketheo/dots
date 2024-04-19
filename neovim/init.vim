@@ -5,11 +5,12 @@ Plug 'rebelot/kanagawa.nvim'
 Plug 'nvim-tree/nvim-tree.lua'
 Plug 'nvim-tree/nvim-web-devicons'
 Plug 'ludovicchabant/vim-gutentags'
+Plug 'neovim/nvim-lspconfig'
 call plug#end()
 
 colorscheme kanagawa
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
 
 " Tree Sitter Folding
@@ -18,7 +19,6 @@ set expandtab
 " set nofoldenable                     " Disable folding at startup.
 
 lua <<EOF
-
 -------------------------------------------------------- Tree Sitter
 -- Highlighting - https://github.com/nvim-treesitter/nvim-treesitter?tab=readme-ov-file#highlight
 require'nvim-treesitter.configs'.setup {
@@ -134,6 +134,24 @@ require'nvim-web-devicons'.setup {
   },
  };
 }
+
+-------------------------------------------------------- LSP Config
+-- C Language Server (clangd)
+local lsp = require 'lspconfig'
+lsp.clangd.setup{
+    cmd = {
+        "clangd",
+        "--background-index",
+        "--suggest-missing-includes",
+    },
+    filetypes = { "c", "cpp" },
+}
+
+-- Go to the next error
+vim.keymap.set("n", "]g", vim.diagnostic.goto_next)
+vim.keymap.set("n", "[g", vim.diagnostic.goto_prev)
+
+
 EOF
 
 
