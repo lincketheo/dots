@@ -13,9 +13,6 @@
 [submodule "neovim/vim-gutentags"]
 	path = neovim/plugged/vim-gutentags
 	url = https://github.com/ludovicchabant/vim-gutentags.git
-[submodule "neovim/plugged/coq_nvim"]
-	path = neovim/plugged/coq_nvim
-	url = https://github.com/ms-jpq/coq_nvim.git
 [submodule "neovim/plugged/nvim-lspconfig"]
 	path = neovim/plugged/nvim-lspconfig
 	url = https://github.com/neovim/nvim-lspconfig.git
