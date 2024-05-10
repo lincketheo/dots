@@ -1,5 +1,7 @@
 #!/bin/bash
 
+pip3 install --user pynvim
+
 # Move nvim stuff
 rm -rf ~/.config/nvim
 mkdir ~/.config/nvim
