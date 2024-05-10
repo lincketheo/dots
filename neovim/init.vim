@@ -4,7 +4,7 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'rebelot/kanagawa.nvim'
 Plug 'nvim-tree/nvim-tree.lua'
 Plug 'nvim-tree/nvim-web-devicons'
-Plug 'ludovicchabant/vim-gutentags'
+" Plug 'ludovicchabant/vim-gutentags'
 Plug 'neovim/nvim-lspconfig'
 
 " nvim-cmp
@@ -17,12 +17,29 @@ Plug 'hrsh7th/nvim-cmp'
 " Snippets
 Plug 'hrsh7th/cmp-vsnip'
 Plug 'hrsh7th/vim-vsnip'
+
+" Auto format
+Plug 'vim-autoformat/vim-autoformat'
+
+" Airline
+Plug 'vim-airline/vim-airline'
+
+" Auto format
+Plug 'vim-autoformat/vim-autoformat'
+
+" Refactoring
+Plug 'nvim-lua/plenary.nvim'
+Plug 'ThePrimeagen/refactoring.nvim'
 call plug#end()
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""" Setup Python
+let g:python3_host_prog="/usr/bin/python3"
 
 colorscheme kanagawa
 set tabstop=2
 set shiftwidth=2
 set expandtab
+set number
 
 " Tree Sitter Folding
 " set foldmethod=expr
@@ -226,12 +243,53 @@ lsp.clangd.setup{
     filetypes = { "c", "cpp" },
 }
 
+-- Web stuff
+lsp.tailwindcss.setup {
+  on_attach = on_attach,
+  capabilites = capabilities,
+}
+
+lsp.tsserver.setup {
+  on_attach = on_attach,
+  capabilites = capabilities,
+}
+
+lsp.jsonls.setup {
+  on_attach = on_attach,
+  capabilites = capabilities,
+}
+
+lsp.eslint.setup {
+  on_attach = on_attach,
+  capabilites = capabilities,
+}
+
+lsp.cssls.setup {
+  on_attach = on_attach,
+  capabilities = capabilities
+}
+
+lsp.html.setup {
+  on_attach = on_attach,
+  capabilities = capabilities
+}
+
+lsp.vuels.setup {
+  on_attach = on_attach,
+  capabilities = capabilities
+}
+
 -- Go to the next error
 vim.keymap.set("n", "]g", vim.diagnostic.goto_next)
 vim.keymap.set("n", "[g", vim.diagnostic.goto_prev)
 
 
+-------------------------------------------------------- Refactoring 
+require('refactoring').setup()
+
 EOF
 
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""" Auto formatter
+" TODO
 
