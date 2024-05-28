@@ -15,10 +15,20 @@ function install_tmux_conf() {
   fi
   rm -rf ~/.config/tmux
   mkdir ~/.config/tmux
-  ln -s $(pwd)/tmux/tmux.conf ~/.config/tmux/tmux.conf
 
+  # https://github.com/tmux/tmux/pull/3023
   echo "Install Tmux plugins"
-  chmod u+x ~/.config/tmux/plugins/tmux-kanagawa/kanagawa.tmux
+  IFS=' ' read -a tmux_out <<< "$(tmux -V)"
+  tmux_version=${tmux_out[1]}
+  if (( $(echo "tmux_version > 3.1" | bc -l) )); then
+    chmod u+x ~/.config/tmux/plugins/tmux-kanagawa/kanagawa.tmux
+    ln -s $(pwd)/tmux/tmux.conf ~/.config/tmux/tmux.conf
+  else
+    chmod u+x ~/.tmux/plugins/tmux-kanagawa/kanagawa.tmux
+    ln -s $(pwd)/tmux/tmux.conf ~/.tmux.conf
+  fi
+
+
 }
 
 function install_cli_tools() {
