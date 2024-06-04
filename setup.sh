@@ -32,12 +32,16 @@ function install_tmux_conf() {
 }
 
 function install_cli_tools() {
+  # zoxide and fzf
   curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
   if [ ! -d ~/.fzf ];
   then
     git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
     ~/.fzf/install
   fi
+
+  # Commitizen cli
+  npm install -g commitizen-cli
 }
 
 function install_zsh() {
