@@ -19,5 +19,6 @@ tere() {
 
 # ZOxide
 eval "$(zoxide init zsh)"
+alias virtualenv="~/.local/bin/virtualenv"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
