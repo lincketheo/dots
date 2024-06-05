@@ -1,4 +1,9 @@
 #!/bin/bash
+#
+
+function install_delta() {
+  # TODO
+}
 
 function install_nvim_confs() {
   # Used for linter in nvim
