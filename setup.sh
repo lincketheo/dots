@@ -1,5 +1,4 @@
 #!/bin/bash
-#
 
 function install_treesitter() {
   if ! command -v tree-sitter &> /dev/null; then
@@ -92,7 +91,7 @@ function install_minor_cli_tools() {
 }
 
 function setup_user_python_env() {
-  pip3 install --user -r ./requirements.txt 
+  pip3 install --user -r ./requirements.txt
 }
 
 function install_zsh() {
@@ -104,12 +103,14 @@ function install_zsh() {
   ln -sf "$(pwd)/zsh/zshrc" ~/.zshrc
 }
 
+install_my_bins
+exit 0
+
 install_treesitter
 install_nvim_confs
 install_tmux_conf
 install_minor_cli_tools
 install_zsh
-install_my_bins
 install_commitizen
 install_shellcheck
 setup_user_python_env
