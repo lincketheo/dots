@@ -17,7 +17,7 @@ function install_treesitter() {
 }
 
 function install_delta() {
-  # TODO
+  echo "TODO"
 }
 
 function install_nvim_confs() {
@@ -25,7 +25,11 @@ function install_nvim_confs() {
   pip3 install --user pynvim
   rm -rf ~/.config/nvim
   mkdir ~/.config/nvim
-  ln -s $(pwd)/neovim/init.vim ~/.config/nvim/init.vim
+  ln -sf $(pwd)/neovim/init.vim ~/.config/nvim/init.vim
+
+  # Setup
+  # Setup node.js neovim provider
+  npm install -g neovim
 }
 
 function install_tmux_conf() {
@@ -42,10 +46,10 @@ function install_tmux_conf() {
   tmux_version=${tmux_out[1]}
   if (( $(echo "tmux_version > 3.1" | bc -l) )); then
     chmod u+x ~/.config/tmux/plugins/tmux-kanagawa/kanagawa.tmux
-    ln -s $(pwd)/tmux/tmux.conf ~/.config/tmux/tmux.conf
+    ln -sf $(pwd)/tmux/tmux.conf ~/.config/tmux/tmux.conf
   else
     chmod u+x ~/.tmux/plugins/tmux-kanagawa/kanagawa.tmux
-    ln -s $(pwd)/tmux/tmux.conf ~/.tmux.conf
+    ln -sf $(pwd)/tmux/tmux.conf ~/.tmux.conf
   fi
 }
 
@@ -59,7 +63,8 @@ function install_minor_cli_tools() {
   fi
 
   # Commitizen cli
-  npm install -g commitizen-cli
+  npm install -g commitizen
+  cp ./bin/cz-init ~/.local/bin
 }
 
 function install_zsh() {
@@ -68,7 +73,7 @@ function install_zsh() {
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
   fi
   rm ~/.zshrc
-  ln -s $(pwd)/zsh/zshrc ~/.zshrc
+  ln -sf $(pwd)/zsh/zshrc ~/.zshrc
 }
 
 install_treesitter

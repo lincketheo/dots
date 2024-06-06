@@ -4,7 +4,7 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'rebelot/kanagawa.nvim'
 Plug 'nvim-tree/nvim-tree.lua'
 Plug 'nvim-tree/nvim-web-devicons'
-"Plug 'ludovicchabant/vim-gutentags'
+Plug 'ludovicchabant/vim-gutentags'
 Plug 'neovim/nvim-lspconfig'
 
 " nvim-cmp
@@ -23,10 +23,6 @@ Plug 'vim-airline/vim-airline'
 
 " Auto format
 Plug 'vim-autoformat/vim-autoformat'
-
-" Refactoring
-" Plug 'nvim-lua/plenary.nvim'
-" Plug 'ThePrimeagen/refactoring.nvim'
 call plug#end()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""" Setup Python
@@ -280,9 +276,6 @@ lsp.vuels.setup {
 vim.keymap.set("n", "]g", vim.diagnostic.goto_next)
 vim.keymap.set("n", "[g", vim.diagnostic.goto_prev)
 
-
--------------------------------------------------------- Refactoring 
-require('refactoring').setup()
 
 EOF
 
