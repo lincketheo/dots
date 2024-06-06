@@ -53,6 +53,22 @@ function install_tmux_conf() {
   fi
 }
 
+function install_my_bins() {
+  for script in ./bin/*.sh; do
+    exe_ext=$(basename "$script")
+    exe_no_ext="${exe_ext%.sh}"
+    echo "Installing $script to ~/.local/bin/$exe_no_ext"
+    cp $script ~/.local/bin/$exe_no_ext
+  done
+}
+
+function install_commitizen() {
+  npm install -g commitizen
+  npm install -g cz-conventional-changelog
+  rm -f ~/.czrc
+  ln -sf $(pwd)/cz-cli/czrc ~/.czrc
+}
+
 function install_minor_cli_tools() {
   # zoxide and fzf
   curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
@@ -63,8 +79,7 @@ function install_minor_cli_tools() {
   fi
 
   # Commitizen cli
-  npm install -g commitizen
-  cp ./bin/cz-init ~/.local/bin
+
 }
 
 function install_zsh() {
@@ -76,8 +91,10 @@ function install_zsh() {
   ln -sf $(pwd)/zsh/zshrc ~/.zshrc
 }
 
-install_treesitter
-install_nvim_confs
-install_tmux_conf
-install_minor_cli_tools
-install_zsh
+#install_treesitter
+#install_nvim_confs
+#install_tmux_conf
+#install_minor_cli_tools
+#install_zsh
+install_my_bins
+install_commitizen
