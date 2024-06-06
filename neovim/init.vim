@@ -64,7 +64,7 @@ require'nvim-treesitter.configs'.setup {
     },
   },
 }
--- Indentation - 
+-- Indentation -
 require'nvim-treesitter.configs'.setup {
   indent = {
     enable = true
@@ -282,4 +282,3 @@ EOF
 
 """""""""""""""""""""""""""""""""""""""""""""""""""" Auto formatter
 " TODO
-

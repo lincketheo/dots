@@ -13,4 +13,3 @@ for ignore in "${ignores[@]}"; do
     echo "$ignore" >> "$gitignore"
   fi
 done
-
