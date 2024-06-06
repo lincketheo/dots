@@ -16,6 +16,19 @@ function install_treesitter() {
   fi
 }
 
+function install_shellcheck() {
+  version=stable
+  outdir=shellcheck-stable
+  artifact=$outdir.linux.x86_64.tar.xz
+  exe=shellcheck
+
+  wget https://github.com/koalaman/shellcheck/releases/download/stable/shellcheck-stable.linux.x86_64.tar.xz
+  tar -xf $artifact
+  cp $outdir/$exe ~/.local/bin
+  rm -rf $outdir
+  rm -rf $artifact
+}
+
 function install_delta() {
   echo "TODO"
 }
@@ -98,3 +111,4 @@ install_minor_cli_tools
 install_zsh
 install_my_bins
 install_commitizen
+install_shellcheck
