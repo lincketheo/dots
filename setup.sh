@@ -91,10 +91,10 @@ function install_zsh() {
   ln -sf $(pwd)/zsh/zshrc ~/.zshrc
 }
 
-#install_treesitter
-#install_nvim_confs
-#install_tmux_conf
-#install_minor_cli_tools
-#install_zsh
+install_treesitter
+install_nvim_confs
+install_tmux_conf
+install_minor_cli_tools
+install_zsh
 install_my_bins
 install_commitizen
