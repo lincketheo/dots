@@ -35,7 +35,6 @@ function install_delta() {
 
 function install_nvim_confs() {
   # Used for linter in nvim
-  pip3 install --user pynvim
   rm -rf ~/.config/nvim
   mkdir ~/.config/nvim
   ln -sf "$(pwd)/neovim/init.vim" ~/.config/nvim/init.vim
@@ -90,9 +89,10 @@ function install_minor_cli_tools() {
     git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
     ~/.fzf/install
   fi
+}
 
-  # Commitizen cli
-
+function setup_user_python_env() {
+  pip3 install --user -r ./requirements.txt 
 }
 
 function install_zsh() {
@@ -112,3 +112,4 @@ install_zsh
 install_my_bins
 install_commitizen
 install_shellcheck
+setup_user_python_env
