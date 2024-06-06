@@ -236,41 +236,13 @@ lsp.clangd.setup{
     filetypes = { "c", "cpp" },
 }
 
--- Web stuff
-lsp.tailwindcss.setup {
-  on_attach = on_attach,
-  capabilites = capabilities,
-}
-
-lsp.tsserver.setup {
-  on_attach = on_attach,
-  capabilites = capabilities,
-}
-
-lsp.jsonls.setup {
-  on_attach = on_attach,
-  capabilites = capabilities,
-}
-
-lsp.eslint.setup {
-  on_attach = on_attach,
-  capabilites = capabilities,
-}
-
-lsp.cssls.setup {
-  on_attach = on_attach,
-  capabilities = capabilities
-}
-
-lsp.html.setup {
-  on_attach = on_attach,
-  capabilities = capabilities
-}
-
-lsp.vuels.setup {
-  on_attach = on_attach,
-  capabilities = capabilities
-}
+-- Web stuff - TODO - get this to work.
+-- lsp.tailwindcss.setup {}
+-- lsp.tsserver.setup {}
+-- lsp.jsonls.setup {}
+-- lsp.cssls.setup {}
+-- lsp.html.setup {}
+-- lsp.vuels.setup {}
 
 -- Go to the next error
 vim.keymap.set("n", "]g", vim.diagnostic.goto_next)

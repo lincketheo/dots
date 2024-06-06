@@ -53,6 +53,15 @@ function install_nvim_confs() {
   npm install -g neovim
 }
 
+function other_npm_installs() {
+  # These are mostly for nvim. Although I haven't gotten them to work yet and
+  # my goto is to edit in vscode or webstorm. Someday I'll fix, for now, I'll
+  # just install them
+  npm install -g @tailwindcss/language-server
+  npm install -g @vue/language-server
+  npm install -g typescript-language-server typescript
+}
+
 function install_tmux_conf() {
   if [ ! -d ~/.tmux/plugins/tpm ]; then
     git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
@@ -120,3 +129,4 @@ install_zsh
 install_commitizen
 install_shellcheck
 setup_user_python_env
+other_npm_installs
