@@ -6,7 +6,6 @@ Plug 'nvim-tree/nvim-tree.lua'
 Plug 'nvim-tree/nvim-web-devicons'
 "Plug 'ludovicchabant/vim-gutentags'
 Plug 'neovim/nvim-lspconfig'
-Plug 'christoomey/vim-tmux-navigator'
 
 " nvim-cmp
 Plug 'hrsh7th/cmp-nvim-lsp'
@@ -19,9 +18,6 @@ Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/cmp-vsnip'
 Plug 'hrsh7th/vim-vsnip'
 
-" Auto format
-Plug 'vim-autoformat/vim-autoformat'
-
 " Airline
 Plug 'vim-airline/vim-airline'
 
@@ -29,8 +25,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-autoformat/vim-autoformat'
 
 " Refactoring
-Plug 'nvim-lua/plenary.nvim'
-Plug 'ThePrimeagen/refactoring.nvim'
+" Plug 'nvim-lua/plenary.nvim'
+" Plug 'ThePrimeagen/refactoring.nvim'
 call plug#end()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""" Setup Python

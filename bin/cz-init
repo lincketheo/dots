@@ -1,0 +1,6 @@
+echo "{ \"path\": \"cz-conventional-changelog\" }" > .czrc
+if [ ! -f ".gitignore" ]; then
+    echo ".czrc" > ".gitignore"
+elif ! grep -q ".czrc" ".gitignore"; then
+    echo ".czrc" >> ".gitignore"
+fi

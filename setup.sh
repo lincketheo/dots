@@ -1,6 +1,21 @@
 #!/bin/bash
 #
 
+function install_treesitter() {
+  if ! command -v tree-sitter &> /dev/null; then
+    # TODO - Mac
+    version=v0.20.4 # TODO - for older version of GLIBC
+    exe=tree-sitter-linux-x64
+    artifact=$exe.gz
+
+    wget https://github.com/tree-sitter/tree-sitter/releases/download/$version/$artifact
+    gunzip $artifact
+    chmod u+x $exe
+    mv $exe ~/.local/bin/tree-sitter
+    rm -f $exe $artifact
+  fi
+}
+
 function install_delta() {
   # TODO
 }
@@ -18,11 +33,11 @@ function install_tmux_conf() {
   then
     git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
   fi
+
   rm -rf ~/.config/tmux
   mkdir ~/.config/tmux
 
   # https://github.com/tmux/tmux/pull/3023
-  echo "Install Tmux plugins"
   IFS=' ' read -a tmux_out <<< "$(tmux -V)"
   tmux_version=${tmux_out[1]}
   if (( $(echo "tmux_version > 3.1" | bc -l) )); then
@@ -32,11 +47,9 @@ function install_tmux_conf() {
     chmod u+x ~/.tmux/plugins/tmux-kanagawa/kanagawa.tmux
     ln -s $(pwd)/tmux/tmux.conf ~/.tmux.conf
   fi
-
-
 }
 
-function install_cli_tools() {
+function install_minor_cli_tools() {
   # zoxide and fzf
   curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
   if [ ! -d ~/.fzf ];
@@ -58,7 +71,8 @@ function install_zsh() {
   ln -s $(pwd)/zsh/zshrc ~/.zshrc
 }
 
+install_treesitter
 install_nvim_confs
 install_tmux_conf
-install_cli_tools
+install_minor_cli_tools
 install_zsh
