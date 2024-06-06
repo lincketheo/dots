@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function install_treesitter() {
-  if ! command -v tree-sitter &> /dev/null; then
+  if ! command -v tree-sitter &>/dev/null; then
     # TODO - Mac
     version=v0.20.4 # TODO - for older version of GLIBC
     exe=tree-sitter-linux-x64
@@ -15,13 +15,23 @@ function install_treesitter() {
   fi
 }
 
+function install_shfmt() {
+  version=v3.8.0
+  artifact=shfmt_${version}_linux_amd64
+
+  wget https://github.com/mvdan/sh/releases/download/$version/$artifact
+  chmod u+x $artifact
+  cp $artifact "$HOME/.local/bin/shfmt"
+  rm $artifact
+}
+
 function install_shellcheck() {
   version=stable
   outdir=shellcheck-stable
   artifact=$outdir.linux.x86_64.tar.xz
   exe=shellcheck
 
-  wget https://github.com/koalaman/shellcheck/releases/download/stable/shellcheck-stable.linux.x86_64.tar.xz
+  wget https://github.com/koalaman/shellcheck/releases/download/$version/$artifact
   tar -xf $artifact
   cp $outdir/$exe ~/.local/bin
   rm -rf $outdir
@@ -44,8 +54,7 @@ function install_nvim_confs() {
 }
 
 function install_tmux_conf() {
-  if [ ! -d ~/.tmux/plugins/tpm ];
-  then
+  if [ ! -d ~/.tmux/plugins/tpm ]; then
     git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
   fi
 
@@ -53,9 +62,9 @@ function install_tmux_conf() {
   mkdir ~/.config/tmux
 
   # https://github.com/tmux/tmux/pull/3023
-  IFS=' ' read -ar tmux_out <<< "$(tmux -V)"
+  IFS=' ' read -ar tmux_out <<<"$(tmux -V)"
   tmux_version=${tmux_out[1]}
-  if (( $(echo "$tmux_version > 3.1" | bc -l) )); then
+  if (($(echo "$tmux_version > 3.1" | bc -l))); then
     chmod u+x ~/.config/tmux/plugins/tmux-kanagawa/kanagawa.tmux
     ln -sf "$(pwd)/tmux/tmux.conf" ~/.config/tmux/tmux.conf
   else
@@ -83,8 +92,7 @@ function install_commitizen() {
 function install_minor_cli_tools() {
   # zoxide and fzf
   curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
-  if [ ! -d ~/.fzf ];
-  then
+  if [ ! -d ~/.fzf ]; then
     git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
     ~/.fzf/install
   fi
@@ -95,17 +103,15 @@ function setup_user_python_env() {
 }
 
 function install_zsh() {
-  if [ ! -d ~/.oh-my-zsh ];
-  then
+  if [ ! -d ~/.oh-my-zsh ]; then
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
   fi
   rm ~/.zshrc
   ln -sf "$(pwd)/zsh/zshrc" ~/.zshrc
 }
 
+install_shfmt
 install_my_bins
-exit 0
-
 install_treesitter
 install_nvim_confs
 install_tmux_conf
