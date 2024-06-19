@@ -119,6 +119,10 @@ function install_zsh() {
   ln -sf "$(pwd)/zsh/zshrc" ~/.zshrc
 }
 
+function install_git() {
+  git config --global core.excludesFile "$(pwd)/git/gitignore"
+}
+
 install_shfmt
 install_my_bins
 install_treesitter
@@ -130,3 +134,4 @@ install_commitizen
 install_shellcheck
 setup_user_python_env
 other_npm_installs
+install_git
