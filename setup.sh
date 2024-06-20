@@ -60,6 +60,7 @@ function other_npm_installs() {
   npm install -g @tailwindcss/language-server
   npm install -g @vue/language-server
   npm install -g typescript-language-server typescript
+  npm install -g fixjson
 }
 
 function install_tmux_conf() {
