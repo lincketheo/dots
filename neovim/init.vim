@@ -247,7 +247,7 @@ lsp.rust_analyzer.setup {
 
 -- Web stuff - TODO - get this to work.
 -- lsp.tailwindcss.setup {}
--- lsp.tsserver.setup {}
+lsp.tsserver.setup {}
 -- lsp.jsonls.setup {}
 -- lsp.cssls.setup {}
 -- lsp.html.setup {}
