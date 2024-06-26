@@ -28,6 +28,10 @@ Plug 'vim-autoformat/vim-autoformat'
 Plug 'danymat/neogen'
 call plug#end()
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""" Tags
+set statusline+=%{gutentags#statusline()}
+nnoremap <C-]> :execute 'tj' expand('<cword>')<CR>zv
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""" Setup Python
 let g:python3_host_prog="/usr/bin/python3"
 
