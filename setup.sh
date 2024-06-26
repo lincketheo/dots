@@ -83,6 +83,10 @@ function install_tmux_conf() {
   fi
 }
 
+function setup_ctags() {
+  ln -sf "$(pwd)/ctags/ctags" ~/.ctags
+}
+
 function install_my_bins() {
   for script in ./bin/*.sh; do
     exe_ext=$(basename "$script")
@@ -136,3 +140,4 @@ install_shellcheck
 setup_user_python_env
 other_npm_installs
 install_git
+setup_ctags
