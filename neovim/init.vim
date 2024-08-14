@@ -21,16 +21,14 @@ Plug 'hrsh7th/vim-vsnip'
 " Airline
 Plug 'vim-airline/vim-airline'
 
-" Auto format
-Plug 'vim-autoformat/vim-autoformat'
-
 " Annotations
 Plug 'danymat/neogen'
+
+Plug '~/Development/docs_nvim'
 call plug#end()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""" Tags
 set statusline+=%{gutentags#statusline()}
-nnoremap <C-]> :execute 'tj' expand('<cword>')<CR>zv
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""" Setup Python
 let g:python3_host_prog="/usr/bin/python3"
@@ -100,7 +98,6 @@ local function edit_or_open()
 end
 
 -- global
-vim.api.nvim_set_keymap("n", "<C-h>", ":NvimTreeToggle<cr>", {silent = true, noremap = true})
 
 -- disable netrw at the very start of your init.lua
 vim.g.loaded_netrw = 1
@@ -248,6 +245,7 @@ lsp.rust_analyzer.setup {
     ['rust-analyzer'] = {},
   },
 }
+lsp.pyright.setup{}
 
 -- Web stuff - TODO - get this to work.
 -- lsp.tailwindcss.setup {}
@@ -256,6 +254,7 @@ lsp.tsserver.setup {}
 -- lsp.cssls.setup {}
 -- lsp.html.setup {}
 -- lsp.vuels.setup {}
+lsp.leanls.setup{}
 
 -- Go to the next error
 vim.keymap.set("n", "]g", vim.diagnostic.goto_next)
@@ -268,8 +267,9 @@ require('neogen').setup({
   }
 })
 
+-------------------------------------------------------- Docs gen
+require('scratch-buffer').setup()
+
+-------------------------------------------------------- Docs gen
+
 EOF
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""" Auto formatter
-" TODO

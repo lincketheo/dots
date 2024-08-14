@@ -4,9 +4,9 @@ ZSH_THEME="robbyrussell"
 
 plugins=(git tmux)
 
-ZSH_TMUX_AUTOSTART=true
-ZSH_TMUX_AUTOQUIT=true
-ZSH_TMUX_DEFAULT_SESSION_NAME="main"
+#ZSH_TMUX_AUTOSTART=true
+#ZSH_TMUX_AUTOQUIT=true
+#ZSH_TMUX_DEFAULT_SESSION_NAME="main"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -15,6 +15,20 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 export PATH=$PATH:$HOME/.local/bin
+export PATH=$PATH:$HOME/Development/byte_blade/bin
+export PATH=$PATH:$HOME/.local/psql/bin
+export PATH=$PATH:$HOME/.local/nginx/sbin
+export PATH=$PATH:$HOME/.local/mayo/bin
+export PATH=$PATH:$HOME/.local/go/bin
+export PATH="$HOME/.elan/bin:$PATH" # lean
+export PATH=$PATH:$HOME/Development/builds/zig-linux-x86_64-0.14.0-dev.1057+76f062690 # Zig
+export PATH=$PATH:$HOME/Development/builds/git-cliff-2.2.2
+export PATH=$PATH:$HOME/Development/builds/kubectl
+
+export TMPDIR=~/tmp
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/.local/mayo/lib
+
+export KUBECONFIG=$HOME/Development/racecar/a1.yaml
 
 tere() {
     local result=$(command tere "$@")
