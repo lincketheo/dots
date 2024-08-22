@@ -9,3 +9,4 @@ npm install -g typescript-language-server typescript
 npm install -g fixjson
 npm install -g commitizen
 npm install -g cz-conventional-changelog
+npm install -g neovim
