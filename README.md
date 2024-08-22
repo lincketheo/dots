@@ -7,7 +7,7 @@ Therefore, I will try as hard as I can to not move any file to an unknown locati
 
 ## Neovim
 ```
-$ ln -sf "./neovim/init.vim" ~/.config/nvim/init.vim
+$ ln -sf "$(pwd)/neovim/init.vim" ~/.config/nvim/init.vim
 ```
 
 ## Tmux
@@ -27,7 +27,7 @@ $ ln -sf "./tmux/tmux.conf" ~/.tmux.conf
 
 ## CTags
 ```
-$ ln -sf "./ctags/ctags" ~/.ctags
+$ ln -sf "$(pwd)/ctags/ctags" ~/.ctags
 ```
 
 ## ZOxide
@@ -50,11 +50,11 @@ $ pip3 install --user -r ./requirements.txt
 ```
 $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 $ rm ~/.zshrc
-$ ln -sf "./zsh/zshrc" ~/.zshrc
+$ ln -sf "$(pwd)/zsh/zshrc" ~/.zshrc
 ```
 
 ## git
 ```
-$ git config --global core.excludesFile "./git/gitignore"
+$ git config --global core.excludesFile "$(pwd)/git/gitignore"
 ```
 
