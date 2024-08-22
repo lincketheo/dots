@@ -1,47 +1,5 @@
 #!/bin/bash
 
-function install_treesitter() {
-  if ! command -v tree-sitter &>/dev/null; then
-    # TODO - Mac
-    version=v0.20.4 # TODO - for older version of GLIBC
-    exe=tree-sitter-linux-x64
-    artifact=$exe.gz
-
-    wget https://github.com/tree-sitter/tree-sitter/releases/download/$version/$artifact
-    gunzip $artifact
-    chmod u+x $exe
-    mv $exe ~/.local/bin/tree-sitter
-    rm -f $exe $artifact
-  fi
-}
-
-function install_shfmt() {
-  version=v3.8.0
-  artifact=shfmt_${version}_linux_amd64
-
-  wget https://github.com/mvdan/sh/releases/download/$version/$artifact
-  chmod u+x $artifact
-  cp $artifact "$HOME/.local/bin/shfmt"
-  rm $artifact
-}
-
-function install_shellcheck() {
-  version=stable
-  outdir=shellcheck-stable
-  artifact=$outdir.linux.x86_64.tar.xz
-  exe=shellcheck
-
-  wget https://github.com/koalaman/shellcheck/releases/download/$version/$artifact
-  tar -xf $artifact
-  cp $outdir/$exe ~/.local/bin
-  rm -rf $outdir
-  rm -rf $artifact
-}
-
-function install_delta() {
-  echo "TODO"
-}
-
 function install_nvim_confs() {
   # Used for linter in nvim
   rm -rf ~/.config/nvim
@@ -51,16 +9,6 @@ function install_nvim_confs() {
   # Setup
   # Setup node.js neovim provider
   npm install -g neovim
-}
-
-function other_npm_installs() {
-  # These are mostly for nvim. Although I haven't gotten them to work yet and
-  # my goto is to edit in vscode or webstorm. Someday I'll fix, for now, I'll
-  # just install them
-  npm install -g @tailwindcss/language-server
-  npm install -g @vue/language-server
-  npm install -g typescript-language-server typescript
-  npm install -g fixjson
 }
 
 function install_tmux_conf() {
@@ -96,12 +44,6 @@ function install_my_bins() {
   done
 }
 
-function install_commitizen() {
-  npm install -g commitizen
-  npm install -g cz-conventional-changelog
-  rm -f ~/.czrc
-  ln -sf "$(pwd)/cz-cli/czrc" ~/.czrc
-}
 
 function install_minor_cli_tools() {
   # zoxide and fzf
@@ -128,16 +70,3 @@ function install_git() {
   git config --global core.excludesFile "$(pwd)/git/gitignore"
 }
 
-install_shfmt
-install_my_bins
-install_treesitter
-install_nvim_confs
-install_tmux_conf
-install_minor_cli_tools
-install_zsh
-install_commitizen
-install_shellcheck
-setup_user_python_env
-other_npm_installs
-install_git
-setup_ctags
