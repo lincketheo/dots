@@ -1,17 +1,27 @@
 
 call plug#begin(stdpath('data') . '/plugged')
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
+""""" Makes syntax highlighting a little better (nice to have)
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} 
+
+""""" Color Scheme (nice to have)
 Plug 'rebelot/kanagawa.nvim'
+
+""""" File navigation (nice to have)
 Plug 'nvim-tree/nvim-tree.lua'
 Plug 'nvim-tree/nvim-web-devicons'
+
+""""" Autogenerates ctags (make sure to install universal-ctags)
 Plug 'ludovicchabant/vim-gutentags'
+
+""""" Makes autoconfig of language server easier
 Plug 'neovim/nvim-lspconfig'
 
 " nvim-cmp
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-path'
-Plug 'hrsh7th/cmp-cmdline'
+Plug 'hrsh7th/cmp-cmdline' 
 Plug 'hrsh7th/nvim-cmp'
 
 " Snippets
@@ -24,25 +34,23 @@ Plug 'vim-airline/vim-airline'
 " Annotations
 Plug 'danymat/neogen'
 
-Plug '~/Development/docs_nvim'
+Plug 'vim-autoformat/vim-autoformat'
 call plug#end()
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""" Autoformat
+noremap <F3> :Autoformat<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""" Tags
 set statusline+=%{gutentags#statusline()}
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""" Setup Python
 let g:python3_host_prog="/usr/bin/python3"
-
 colorscheme kanagawa
 set tabstop=2
 set shiftwidth=2
 set expandtab
 set number
-
-" Tree Sitter Folding
-" set foldmethod=expr
-" set foldexpr=nvim_treesitter#foldexpr()
-" set nofoldenable                     " Disable folding at startup.
 
 lua <<EOF
 -------------------------------------------------------- Tree Sitter
@@ -255,6 +263,7 @@ lsp.tsserver.setup {}
 -- lsp.html.setup {}
 -- lsp.vuels.setup {}
 lsp.leanls.setup{}
+lsp.zls.setup{}
 
 -- Go to the next error
 vim.keymap.set("n", "]g", vim.diagnostic.goto_next)
@@ -268,8 +277,6 @@ require('neogen').setup({
 })
 
 -------------------------------------------------------- Docs gen
-require('scratch-buffer').setup()
 
--------------------------------------------------------- Docs gen
 
 EOF
