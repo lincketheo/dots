@@ -5,6 +5,18 @@ I don't like the idea of "install". Just give me a bin and I can put it wherever
 
 Therefore, I will try as hard as I can to not move any file to an unknown location. For those cases, I'll give instructions in this readme.
 
+## Node 
+### Design:
+Everything will be installed inside ~/.js. No need to use sudo for npm 
+```
+$ npm config set prefix ~/.js/npm 
+$ npm install n 
+$ export PATH=$HOME/.js/npm/bin:$PATH 
+$ export N_PREFIX=~/.js/n 
+$ n stable 
+$ export PATH=$HOME/.js/n/bin:$PATH
+```
+
 ## Neovim
 ```
 $ ln -sf "$(pwd)/neovim/init.vim" ~/.config/nvim/init.vim
