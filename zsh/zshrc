@@ -24,6 +24,7 @@ export PATH="$HOME/.elan/bin:$PATH" # lean
 export PATH=$PATH:$HOME/Development/builds/zig-linux-x86_64-0.14.0-dev.1057+76f062690 # Zig
 export PATH=$PATH:$HOME/Development/builds/git-cliff-2.2.2
 export PATH=$PATH:$HOME/Development/builds/kubectl
+export GOPRIVATE=gitlab.rinconres.com/tjl
 
 export TMPDIR=~/tmp
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/.local/mayo/lib
