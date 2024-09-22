@@ -9,8 +9,9 @@ Therefore, I will try as hard as I can to not move any file to an unknown locati
 ### Design:
 Everything will be installed inside ~/.js. No need to use sudo for npm 
 ```
+$ mkdir -p ~/.js/npm
 $ npm config set prefix ~/.js/npm 
-$ npm install n 
+$ npm install -g n 
 $ export PATH=$HOME/.js/npm/bin:$PATH 
 $ export N_PREFIX=~/.js/n 
 $ n stable 
