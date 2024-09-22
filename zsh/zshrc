@@ -10,10 +10,12 @@ plugins=(git tmux)
 
 source $ZSH/oh-my-zsh.sh
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# Special variables
+export TMPDIR=~/tmp
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/.local/mayo/lib
+export N_PREFIX=$HOME/.js/n
 
+# Update paths
 export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:$HOME/Development/byte_blade/bin
 export PATH=$PATH:$HOME/.local/psql/bin
@@ -24,17 +26,9 @@ export PATH="$HOME/.elan/bin:$PATH" # lean
 export PATH=$PATH:$HOME/Development/builds/zig-linux-x86_64-0.14.0-dev.1057+76f062690 # Zig
 export PATH=$PATH:$HOME/Development/builds/git-cliff-2.2.2
 export PATH=$PATH:$HOME/Development/builds/kubectl
-export GOPRIVATE=gitlab.rinconres.com/tjl
-
-export TMPDIR=~/tmp
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/.local/mayo/lib
-
-export KUBECONFIG=$HOME/Development/racecar/a1.yaml
-
-tere() {
-    local result=$(command tere "$@")
-    [ -n "$result" ] && cd -- "$result"
-}
+export PATH=$PATH:$HOME/Development/builds/nvim-linux64/bin
+export PATH=$PATH:$HOME/.js/npm/bin
+export PATH=$HOME/.js/n/bin:$PATH
 
 # ZOxide
 eval "$(zoxide init zsh)"
