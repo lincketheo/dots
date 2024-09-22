@@ -14,6 +14,7 @@ source $ZSH/oh-my-zsh.sh
 export TMPDIR=~/tmp
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/.local/mayo/lib
 export N_PREFIX=$HOME/.js/n
+export PKG_CONFIG_PATH=$HOME/.local/lib/pkgconfig
 
 # Update paths
 export PATH=$PATH:$HOME/.local/bin
