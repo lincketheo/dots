@@ -28,6 +28,7 @@ export GOPRIVATE=gitlab.rinconres.com/tjl
 
 export TMPDIR=~/tmp
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/.local/mayo/lib
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/.local/lib
 
 export KUBECONFIG=$HOME/Development/racecar/a1.yaml
 

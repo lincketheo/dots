@@ -32,7 +32,7 @@ Plug 'hrsh7th/vim-vsnip'
 Plug 'vim-airline/vim-airline'
 
 " Annotations
-Plug 'danymat/neogen'
+Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
 
 Plug 'vim-autoformat/vim-autoformat'
 call plug#end()
@@ -269,12 +269,15 @@ lsp.zls.setup{}
 vim.keymap.set("n", "]g", vim.diagnostic.goto_next)
 vim.keymap.set("n", "[g", vim.diagnostic.goto_prev)
 
--------------------------------------------------------- Neogen
-require('neogen').setup({
-  languages = {
-    ['cpp.doxygen'] = require('neogen.configurations.cpp')
+-------------------------------------------------------- vim dodge
+vim.g.doge_doc_standard = 'doxygen'
+vim.g.doge_mapping_override = {
+  doxygen = {
+    brief = '\\brief',
+    param = '\\param',
+    ['return'] = '\\return'
   }
-})
+}
 
 -------------------------------------------------------- Docs gen
 
