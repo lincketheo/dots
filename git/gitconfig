@@ -1,0 +1,25 @@
+[core]
+  pager = delta
+	editor = nvim
+	excludesFile = /home/tjl/dots/git/gitignore
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true
+
+[merge]
+    conflictstyle = diff3
+
+[diff]
+    colorMoved = default
+
+[user]
+	name = LinckeTheo
+	email = lincketheo@gmail.com
+[push]
+	default = simple
+
+[alias]
+	change-commits = "!f() { VAR=$1; OLD=$2; NEW=$3; shift 3; git filter-branch --env-filter \"if [[ \\\"$`echo $VAR`\\\" = '$OLD' ]]; then export $VAR='$NEW'; fi\" $@; }; f"

@@ -68,6 +68,7 @@ $ ln -sf "$(pwd)/zsh/zshrc" ~/.zshrc
 
 ## git
 ```
+$ ln -sf $(pwd)/dots/git/gitconfig $(cd && pwd)/.gitconfig
 $ git config --global core.excludesFile "$(pwd)/git/gitignore"
 ```
 

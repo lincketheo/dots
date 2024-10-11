@@ -4,15 +4,11 @@ ZSH_THEME="robbyrussell"
 
 plugins=(git tmux)
 
-#ZSH_TMUX_AUTOSTART=true
-#ZSH_TMUX_AUTOQUIT=true
-#ZSH_TMUX_DEFAULT_SESSION_NAME="main"
-
 source $ZSH/oh-my-zsh.sh
 
 # Special variables
 export TMPDIR=~/tmp
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/.local/mayo/lib
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/.local/lib
 export N_PREFIX=$HOME/.js/n
 export PKG_CONFIG_PATH=$HOME/.local/lib/pkgconfig
 
@@ -21,12 +17,7 @@ export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:$HOME/Development/byte_blade/bin
 export PATH=$PATH:$HOME/.local/psql/bin
 export PATH=$PATH:$HOME/.local/nginx/sbin
-export PATH=$PATH:$HOME/.local/mayo/bin
-export PATH=$PATH:$HOME/.local/go/bin
-export PATH="$HOME/.elan/bin:$PATH" # lean
 export PATH=$PATH:$HOME/Development/builds/zig-linux-x86_64-0.14.0-dev.1057+76f062690 # Zig
-export PATH=$PATH:$HOME/Development/builds/git-cliff-2.2.2
-export PATH=$PATH:$HOME/Development/builds/kubectl
 export PATH=$PATH:$HOME/Development/builds/nvim-linux64/bin
 export PATH=$PATH:$HOME/.js/npm/bin
 export PATH=$HOME/.js/n/bin:$PATH

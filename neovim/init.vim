@@ -256,12 +256,10 @@ lsp.rust_analyzer.setup {
 lsp.pyright.setup{}
 
 -- Web stuff - TODO - get this to work.
--- lsp.tailwindcss.setup {}
 lsp.tsserver.setup {}
--- lsp.jsonls.setup {}
--- lsp.cssls.setup {}
--- lsp.html.setup {}
--- lsp.vuels.setup {}
+lsp.jsonls.setup {}
+lsp.cssls.setup {}
+lsp.html.setup {}
 lsp.leanls.setup{}
 lsp.zls.setup{}
 
