@@ -22,8 +22,20 @@ export PATH=$PATH:$HOME/Development/builds/nvim-linux64/bin
 export PATH=$PATH:$HOME/.js/npm/bin
 export PATH=$HOME/.js/n/bin:$PATH
 
+# Go
+export GOPATH=$HOME/go 
+export GOBIN=$GOPATH/bin
+export PATH=$PATH:$GOBIN
+export PATH=$PATH:~/.local/go/bin
+export CGO_ENABLED=1
+
 # ZOxide
 eval "$(zoxide init zsh)"
-alias virtualenv="~/.local/bin/virtualenv"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+export JAVA_OPTS="$JAVA_OPTS -Dcom.sun.management.jmxremote.authenticate=false"

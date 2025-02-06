@@ -1,21 +1,13 @@
-
 call plug#begin(stdpath('data') . '/plugged')
-
-""""" Makes syntax highlighting a little better (nice to have)
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} 
-
-""""" Color Scheme (nice to have)
 Plug 'rebelot/kanagawa.nvim'
-
-""""" File navigation (nice to have)
 Plug 'nvim-tree/nvim-tree.lua'
 Plug 'nvim-tree/nvim-web-devicons'
-
-""""" Autogenerates ctags (make sure to install universal-ctags)
 Plug 'ludovicchabant/vim-gutentags'
-
-""""" Makes autoconfig of language server easier
 Plug 'neovim/nvim-lspconfig'
+Plug 'vim-airline/vim-airline'
+Plug 'danymat/neogen'
+Plug 'vim-autoformat/vim-autoformat'
 
 " nvim-cmp
 Plug 'hrsh7th/cmp-nvim-lsp'
@@ -27,16 +19,11 @@ Plug 'hrsh7th/nvim-cmp'
 " Snippets
 Plug 'hrsh7th/cmp-vsnip'
 Plug 'hrsh7th/vim-vsnip'
-
-" Airline
-Plug 'vim-airline/vim-airline'
-
-" Annotations
-Plug 'danymat/neogen'
-
-Plug 'vim-autoformat/vim-autoformat'
 call plug#end()
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""" Common
+colorscheme koehler
+set foldmethod=manual
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""" Autoformat
 noremap <F3> :Autoformat<CR>
@@ -46,47 +33,38 @@ set statusline+=%{gutentags#statusline()}
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""" Setup Python
 let g:python3_host_prog="/usr/bin/python3"
-colorscheme kanagawa
 set tabstop=2
 set shiftwidth=2
 set expandtab
 set number
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""" LUA START
 lua <<EOF
 -------------------------------------------------------- Tree Sitter
--- Highlighting - https://github.com/nvim-treesitter/nvim-treesitter?tab=readme-ov-file#highlight
 require'nvim-treesitter.configs'.setup {
   highlight = {
     enable = true,
-    -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
-    -- Set this to `true` if you depend on 'syntax' being enabled (like for indentation).
-    -- Using this option may slow down your editor, and you may see some duplicate highlights.
-    -- Instead of true it can also be a list of languages
     additional_vim_regex_highlighting = false,
   },
 }
--- Incremental Selection - https://github.com/nvim-treesitter/nvim-treesitter?tab=readme-ov-file#incremental-selection
 require'nvim-treesitter.configs'.setup {
   incremental_selection = {
     enable = true,
     keymaps = {
-      init_selection = "gnn", -- set to `false` to disable one of the mappings
+      init_selection = "gnn", 
       node_incremental = "grn",
       scope_incremental = "grc",
       node_decremental = "grm",
     },
   },
 }
--- Indentation -
 require'nvim-treesitter.configs'.setup {
   indent = {
     enable = true
   }
 }
 
-
 -------------------------------------------------------- Nvim Tree
--- empty setup using defaults
 require("nvim-tree").setup()
 
 local api = require("nvim-tree.api")
@@ -105,9 +83,7 @@ local function edit_or_open()
   end
 end
 
--- global
-
--- disable netrw at the very start of your init.lua
+-- disable netrw 
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
@@ -116,9 +92,6 @@ vim.opt.termguicolors = true
 
 -------------------------------------------------------- web-devicons
 require'nvim-web-devicons'.setup {
- -- your personnal icons can go here (to override)
- -- you can specify color or cterm_color instead of specifying both of them
- -- DevIcon will be appended to `name`
  override = {
   zsh = {
     icon = "",
@@ -127,19 +100,9 @@ require'nvim-web-devicons'.setup {
     name = "Zsh"
   }
  };
- -- globally enable different highlight colors per icon (default to true)
- -- if set to false all icons will have the default icon's color
  color_icons = true;
- -- globally enable default icons (default to false)
- -- will get overriden by `get_icons` option
  default = true;
- -- globally enable "strict" selection of icons - icon will be looked up in
- -- different tables, first by filename, and if not found by extension; this
- -- prevents cases when file doesn't have any extension but still gets some icon
- -- because its name happened to match some extension (default to false)
  strict = true;
- -- same as `override` but specifically for overrides by filename
- -- takes effect when `strict` is true
  override_by_filename = {
   [".gitignore"] = {
     icon = "",
@@ -147,8 +110,6 @@ require'nvim-web-devicons'.setup {
     name = "Gitignore"
   }
  };
- -- same as `override` but specifically for overrides by extension
- -- takes effect when `strict` is true
  override_by_extension = {
   ["log"] = {
     icon = "",
@@ -156,8 +117,6 @@ require'nvim-web-devicons'.setup {
     name = "Log"
   }
  };
- -- same as `override` but specifically for operating system
- -- takes effect when `strict` is true
  override_by_operating_system = {
   ["apple"] = {
     icon = "",
@@ -168,55 +127,41 @@ require'nvim-web-devicons'.setup {
  };
 }
 
-
-
 -------------------------------------------------------- vim-vsnip and vim-cmp
--- Set up nvim-cmp.
 local cmp = require'cmp'
 
 cmp.setup({
   snippet = {
     -- REQUIRED - you must specify a snippet engine
     expand = function(args)
-      vim.fn["vsnip#anonymous"](args.body) -- For `vsnip` users.
-      -- require('luasnip').lsp_expand(args.body) -- For `luasnip` users.
-      -- require('snippy').expand_snippet(args.body) -- For `snippy` users.
-      -- vim.fn["UltiSnips#Anon"](args.body) -- For `ultisnips` users.
-      -- vim.snippet.expand(args.body) -- For native neovim snippets (Neovim v0.10+)
+      vim.fn["vsnip#anonymous"](args.body) 
     end,
   },
   window = {
-    -- completion = cmp.config.window.bordered(),
-    -- documentation = cmp.config.window.bordered(),
   },
   mapping = cmp.mapping.preset.insert({
     ['<C-b>'] = cmp.mapping.scroll_docs(-4),
     ['<C-f>'] = cmp.mapping.scroll_docs(4),
     ['<C-Space>'] = cmp.mapping.complete(),
     ['<C-e>'] = cmp.mapping.abort(),
-    ['<CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
+    ['<CR>'] = cmp.mapping.confirm({ select = true }), 
   }),
   sources = cmp.config.sources({
     { name = 'nvim_lsp' },
-    { name = 'vsnip' }, -- For vsnip users.
-    -- { name = 'luasnip' }, -- For luasnip users.
-    -- { name = 'ultisnips' }, -- For ultisnips users.
-    -- { name = 'snippy' }, -- For snippy users.
+    { name = 'vsnip' }, 
   }, {
     { name = 'buffer' },
   })
 })
 
--- Set configuration for specific filetype.
 cmp.setup.filetype('gitcommit', {
   sources = cmp.config.sources({
-    { name = 'git' }, -- You can specify the `git` source if [you were installed it](https://github.com/petertriho/cmp-git).
+    { name = 'git' }, 
   }, {
     { name = 'buffer' },
   })
 })
 
--- Use buffer source for `/` and `?` (if you enabled `native_menu`, this won't work anymore).
 cmp.setup.cmdline({ '/', '?' }, {
   mapping = cmp.mapping.preset.cmdline(),
   sources = {
@@ -224,7 +169,6 @@ cmp.setup.cmdline({ '/', '?' }, {
   }
 })
 
--- Use cmdline & path source for ':' (if you enabled `native_menu`, this won't work anymore).
 cmp.setup.cmdline(':', {
   mapping = cmp.mapping.preset.cmdline(),
   sources = cmp.config.sources({
@@ -237,25 +181,32 @@ cmp.setup.cmdline(':', {
 
 -------------------------------------------------------- LSP Config
 
--- C Language Server (clangd)
 local lsp = require 'lspconfig'
+
+-- C 
 lsp.clangd.setup{
     cmd = {
         "clangd",
         "--background-index",
         "--suggest-missing-includes",
     },
-    filetypes = { "c", "cpp" },
+    filetypes = { "c", "cpp", "h", "hpp" },
 }
+
+-- RUST
 lsp.rust_analyzer.setup {
-  -- Server-specific settings. See `:help lspconfig-setup`
   settings = {
     ['rust-analyzer'] = {},
   },
 }
+
+-- Python
 lsp.pyright.setup{}
 
--- Web stuff - TODO - get this to work.
+-- GO
+lsp.gopls.setup{}
+
+-- Web 
 lsp.tsserver.setup {}
 lsp.jsonls.setup {}
 lsp.cssls.setup {}
@@ -274,7 +225,6 @@ require('neogen').setup({
   }
 })
 
--------------------------------------------------------- Docs gen
-
 
 EOF
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""" LUA END
