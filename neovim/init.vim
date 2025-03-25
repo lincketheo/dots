@@ -22,7 +22,7 @@ Plug 'hrsh7th/vim-vsnip'
 call plug#end()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""" Common
-colorscheme koehler
+colorscheme kanagawa-dragon
 set foldmethod=manual
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""" Autoformat
