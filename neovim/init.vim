@@ -20,17 +20,24 @@ Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/cmp-vsnip'
 Plug 'hrsh7th/vim-vsnip'
 
-" FZF 
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.8' }
 call plug#end()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""" Common
 colorscheme kanagawa-dragon
 set foldmethod=manual
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""" Telescope 
+" Find files using Telescope command-line sugar.
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""" Autoformat
-noremap <F3> :Autoformat<CR>
+"" Autoformat on save
+autocmd BufWritePre *.c,*.h Autoformat
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""" Tags
 set statusline+=%{gutentags#statusline()}
@@ -69,30 +76,43 @@ require'nvim-treesitter.configs'.setup {
 }
 
 -------------------------------------------------------- Nvim Tree
-require("nvim-tree").setup()
-
-local api = require("nvim-tree.api")
-
-local function edit_or_open()
-  local node = api.tree.get_node_under_cursor()
-
-  if node.nodes ~= nil then
-    -- expand or collapse folder
-    api.node.open.edit()
-  else
-    -- open file
-    api.node.open.edit()
-    -- Close the tree if file was opened
-    api.tree.close()
-  end
-end
-
 -- disable netrw 
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
 -- optionally enable 24-bit colour
 vim.opt.termguicolors = true
+
+
+-- require("nvim-tree").setup({
+--   sort = {
+--     sorter = 'case_sensitive',
+--     },
+--   view = {
+--     width = 30,
+--   },
+--   render = {
+--     group_empty = true,
+--   },
+--   filters = {
+--     dotfiles = true,
+--   },
+-- })
+
+require("nvim-tree").setup({
+  sort = {
+    sorter = 'case_sensitive',
+  },
+  view = {
+    width = 30,
+  },
+  renderer = {
+    group_empty = true,
+  },
+  filters = {
+    dotfiles = true,
+  },
+})
 
 -------------------------------------------------------- web-devicons
 require'nvim-web-devicons'.setup {
