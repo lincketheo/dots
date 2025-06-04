@@ -2,13 +2,15 @@ export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="robbyrussell"
 
-plugins=(git tmux)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
+source $HOME/.cargo/env
 
 # Special variables
 export TMPDIR=~/tmp
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/.local/lib
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/Development/local_llm/llama.cpp/build/bin
 export N_PREFIX=$HOME/.js/n
 export PKG_CONFIG_PATH=$HOME/.local/lib/pkgconfig
 
@@ -21,6 +23,8 @@ export PATH=$PATH:$HOME/Development/builds/zig-linux-x86_64-0.14.0-dev.1057+76f0
 export PATH=$PATH:$HOME/Development/builds/nvim-linux64/bin
 export PATH=$PATH:$HOME/.js/npm/bin
 export PATH=$HOME/.js/n/bin:$PATH
+export PATH=$PATH:/$HOME/Development/builds/apache-jmeter-5.6.3/bin
+export PATH=$PATH:$HOME/Development/local_llm/llama.cpp/build/bin
 
 # Go
 export GOPATH=$HOME/go 
@@ -39,3 +43,4 @@ export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 export JAVA_OPTS="$JAVA_OPTS -Dcom.sun.management.jmxremote.authenticate=false"
+

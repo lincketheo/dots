@@ -19,6 +19,10 @@ Plug 'hrsh7th/nvim-cmp'
 " Snippets
 Plug 'hrsh7th/cmp-vsnip'
 Plug 'hrsh7th/vim-vsnip'
+
+" FZF 
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""" Common
@@ -207,7 +211,7 @@ lsp.pyright.setup{}
 lsp.gopls.setup{}
 
 -- Web 
-lsp.tsserver.setup {}
+-- lsp.tsserver.setup {}
 lsp.jsonls.setup {}
 lsp.cssls.setup {}
 lsp.html.setup {}
@@ -224,7 +228,6 @@ require('neogen').setup({
     ['cpp.doxygen'] = require('neogen.configurations.cpp')
   }
 })
-
 
 EOF
 """""""""""""""""""""""""""""""""""""""""""""""""""""""" LUA END

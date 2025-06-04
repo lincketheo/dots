@@ -1,7 +1,7 @@
 [core]
   pager = delta
 	editor = nvim
-	excludesFile = /home/tjl/dots/git/gitignore
+	excludesFile = /Users/lincketheo/dots/git/gitignore
 
 [interactive]
     diffFilter = delta --color-only
@@ -23,3 +23,8 @@
 
 [alias]
 	change-commits = "!f() { VAR=$1; OLD=$2; NEW=$3; shift 3; git filter-branch --env-filter \"if [[ \\\"$`echo $VAR`\\\" = '$OLD' ]]; then export $VAR='$NEW'; fi\" $@; }; f"
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
