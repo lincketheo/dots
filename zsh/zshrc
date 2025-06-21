@@ -16,6 +16,7 @@ export PKG_CONFIG_PATH=$HOME/.local/lib/pkgconfig
 
 # Update paths
 export PATH=$PATH:$HOME/.local/bin
+export PATH=$PATH:$HOME/dots/scripts
 export PATH=$PATH:$HOME/Development/byte_blade/bin
 export PATH=$PATH:$HOME/.local/psql/bin
 export PATH=$PATH:$HOME/.local/nginx/sbin
@@ -44,3 +45,7 @@ export SDKMAN_DIR="$HOME/.sdkman"
 
 export JAVA_OPTS="$JAVA_OPTS -Dcom.sun.management.jmxremote.authenticate=false"
 
+# My favorite docker ps
+alias dps='docker ps --format "table {{.ID}}\t{{.Image}}\t{{.Command}}\t{{.Names}}\t{{.CreatedAt}}\t{{.Status}}"'
+
+alias t="todo.sh"

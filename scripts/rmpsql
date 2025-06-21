@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# Usage: rmpsql FOLDERNAME
+
+set -e
+
+FOLDERNAME=$1
+CONTAINER_NAME="psql_$FOLDERNAME"
+
+if [ -z "$FOLDERNAME" ]; then
+  echo "Usage: $0 FOLDERNAME"
+  exit 1
+fi
+
+# Stop and remove container
+if docker ps -a --format '{{.Names}}' | grep -q "^$CONTAINER_NAME$"; then
+  docker stop "$CONTAINER_NAME"
+  docker rm "$CONTAINER_NAME"
+else
+  echo "No container named $CONTAINER_NAME found."
+fi
+
+# Remove folder
+if [ -d "$FOLDERNAME" ]; then
+  rm -rf "$FOLDERNAME"
+  echo "Deleted folder $FOLDERNAME"
+else
+  echo "Folder $FOLDERNAME does not exist."
+fi
+

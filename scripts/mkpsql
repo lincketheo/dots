@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# Usage: mkpsql FOLDERNAME PASSWORD
+
+set -e
+
+FOLDERNAME=$1
+PASSWORD=$2
+CONTAINER_NAME="psql_$FOLDERNAME"
+
+if [ -z "$FOLDERNAME" ] || [ -z "$PASSWORD" ]; then
+  echo "Usage: $0 FOLDERNAME PASSWORD"
+  exit 1
+fi
+
+mkdir -p "$FOLDERNAME"
+
+docker run -d \
+  --name "$CONTAINER_NAME" \
+  -e POSTGRES_PASSWORD="$PASSWORD" \
+  -v "$(pwd)/$FOLDERNAME":/var/lib/postgresql/data \
+  -p 5432:5432 \
+  postgres
+

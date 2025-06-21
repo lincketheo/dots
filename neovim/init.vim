@@ -208,14 +208,36 @@ cmp.setup.cmdline(':', {
 local lsp = require 'lspconfig'
 
 -- C 
-lsp.clangd.setup{
-    cmd = {
-        "clangd",
-        "--background-index",
-        "--suggest-missing-includes",
-    },
-    filetypes = { "c", "cpp", "h", "hpp" },
-}
+lsp.clangd.setup({
+  cmd = {
+    "clangd",
+    "--background-index",
+    "--clang-tidy",
+    "--suggest-missing-includes",
+    "--header-insertion=iwyu",
+    "--completion-style=detailed",
+  },
+  filetypes = { "c", "cpp", "objc", "objcpp", "h", "hpp" },
+  root_dir = lsp.util.root_pattern("compile_commands.json", ".git"),
+  capabilities = require('cmp_nvim_lsp').default_capabilities(),
+  on_attach = function(_, bufnr)
+    local opts = { noremap=true, silent=true }
+    local map = vim.api.nvim_buf_set_keymap
+    map(bufnr, 'n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>', opts)
+    map(bufnr, 'n', 'K',  '<cmd>lua vim.lsp.buf.hover()<CR>', opts)
+    map(bufnr, 'n', '[d', '<cmd>lua vim.diagnostic.goto_prev()<CR>', opts)
+    map(bufnr, 'n', ']d', '<cmd>lua vim.diagnostic.goto_next()<CR>', opts)
+    map(bufnr, 'n', '<leader>q', '<cmd>lua vim.diagnostic.setloclist()<CR>', opts)
+
+    -- Auto-popup diagnostics
+    vim.api.nvim_create_autocmd("CursorHold", {
+      buffer = bufnr,
+      callback = function()
+        vim.diagnostic.open_float(nil, { focus = false })
+      end
+    })
+  end,
+})
 
 -- RUST
 lsp.rust_analyzer.setup {
