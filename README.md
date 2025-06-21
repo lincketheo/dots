@@ -23,6 +23,11 @@ $ export PATH=$HOME/.js/n/bin:$PATH
 $ ln -sf "$(pwd)/neovim/init.vim" ~/.config/nvim/init.vim
 ```
 
+## Idea 
+```
+$ ln -sf "$(pwd)/idea/ideavimrc" ~/.ideavimrc"
+```
+
 ## Tmux
 ```
 $ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm

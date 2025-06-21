@@ -1,0 +1,11 @@
+let mapleader="\\"
+
+nmap <leader>ff :action SearchEverywhere<CR>
+nmap <leader>fb :action RecentFiles<CR>
+nmap <leader>fw :action FindInPath<CR>
+nmap <leader>fg :action GotoFile<CR>
+nmap <leader>fs :action GotoSymbol<CR>
+nmap <leader>fa :action GotoAction<CR>
+
+nmap ]g :action GotoNextError<CR>
+nmap [g :action GotoPreviousError<CR>
